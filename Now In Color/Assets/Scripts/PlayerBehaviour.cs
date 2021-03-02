@@ -9,6 +9,7 @@ public class PlayerBehaviour : MonoBehaviour
 {
     Rigidbody2D rb2d;
     public Vector2 jumpForce = new Vector2(0, 5.0f);
+    public SpriteRenderer sr;
     public bool canJump = true;
     public float speed = 5.0f;
 
@@ -16,6 +17,7 @@ public class PlayerBehaviour : MonoBehaviour
     void Start()
     {
         rb2d = this.gameObject.GetComponent<Rigidbody2D>();
+        sr = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -23,6 +25,11 @@ public class PlayerBehaviour : MonoBehaviour
     {
         // yMove and xMove will be set to a value between -1 and 1
         float xMove = Input.GetAxis("Horizontal");
+
+        if (xMove != 0)
+        {
+            sr.flipX = xMove < 0;
+        }
 
         // Getting our current position
         Vector3 newPos = transform.position;
