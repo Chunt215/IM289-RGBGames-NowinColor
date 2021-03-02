@@ -466,6 +466,7 @@ MonoBehaviour:
   sr: {fileID: 1738101887}
   rb2d: {fileID: 1738101889}
   speed: 10
+  jumpForce: 5
 --- !u!212 &1738101887
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -525,7 +526,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1738101884}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.75, y: 4.51, z: 0}
+  m_LocalPosition: {x: -11.75, y: 4.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
