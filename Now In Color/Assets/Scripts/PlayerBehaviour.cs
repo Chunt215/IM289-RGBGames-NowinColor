@@ -7,41 +7,36 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    public SpriteRenderer sr;
-    public Rigidbody2D rb2d;
-    public int speed = 10;
+    Rigidbody2D rb2d;
+    public Vector2 jumpForce = new Vector2(0, 5.0f);
+    public bool canJump = true;
+    public float speed = 5.0f;
+
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Player does things");
+        rb2d = this.gameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        movement();
-    }
-
-    void movement()
-    {
+        // yMove and xMove will be set to a value between -1 and 1
         float xMove = Input.GetAxis("Horizontal");
 
-        if (xMove != 0)
+        // Getting our current position
+        Vector3 newPos = transform.position;
+
+        // Changing the position
+        newPos.x += xMove * Time.deltaTime * speed;
+
+        // Setting our position to the new one
+        transform.position = newPos;
+
+        if (Input.GetKeyDown(KeyCode.Space) && canJump)
         {
-            sr.flipX = xMove < 0;
+            rb2d.AddForce(jumpForce, ForceMode2D.Impulse);
+            canJump = false;
         }
-
-        Vector2 moveForce = new Vector2(xMove * speed * Time.deltaTime, 0);
-        rb2d.AddForce(moveForce);
-    }
-
-    void jumping()
-    {
-        if (Input.GetButtonDown("Jump") && !isJump)
-        {   
-            rb2d.AddForce(Vector2.up * jumpForce);
-            isJump = true;
-        }
-
     }
 }
