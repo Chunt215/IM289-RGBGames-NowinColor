@@ -552,13 +552,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-<<<<<<< Updated upstream
   m_Constraints: 0
 --- !u!1001 &3457176505426814110
-=======
-  m_Constraints: 4
---- !u!1001 &1788094782
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
