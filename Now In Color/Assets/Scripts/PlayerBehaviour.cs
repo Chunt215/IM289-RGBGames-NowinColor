@@ -10,6 +10,8 @@ public class PlayerBehaviour : MonoBehaviour
     public SpriteRenderer sr;
     public Rigidbody2D rb2d;
     public int speed = 10;
+    public int jumpForce = 5;
+    bool isJump = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,7 @@ public class PlayerBehaviour : MonoBehaviour
     void Update()
     {
         movement();
+        jumping();
     }
 
     void movement()
@@ -34,5 +37,15 @@ public class PlayerBehaviour : MonoBehaviour
 
         Vector2 moveForce = new Vector2(xMove * speed * Time.deltaTime, 0);
         rb2d.AddForce(moveForce);
+    }
+
+    void jumping()
+    {
+        if (Input.GetButtonDown("Jump") && !isJump)
+        {   
+            rb2d.AddForce(Vector2.up * jumpForce);
+            isJump = true;
+        }
+
     }
 }
