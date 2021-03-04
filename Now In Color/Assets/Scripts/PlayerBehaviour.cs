@@ -62,11 +62,6 @@ public class PlayerBehaviour : MonoBehaviour
             rb2d.AddForce(Vector2.up * jumpForce);
             canJump = false;
         }
-        // After player jumps, reset canJump to true to jump again
-        if(canJump == false)
-        {
-            canJump = true;
-        }
 
         // Check to see what layer has hit and collect that information
         RaycastHit2D hit = Physics2D.Linecast(rb2d.position, rb2d.position + Vector2.down, mask);
@@ -79,6 +74,14 @@ public class PlayerBehaviour : MonoBehaviour
         else
         {
             anim.SetBool("jumping", true);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Platform")
+        {
+            canJump = true;
         }
     }
 }
