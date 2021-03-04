@@ -95,7 +95,7 @@ public class PlayerBehaviour : MonoBehaviour
         {
             if(collision.gameObject.GetComponent<SpriteRenderer>().color == sr.color)
             {
-                Destroy(collision.gameObject.GetComponent<BoxCollider2D>());
+                collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
             }
         }
     }
@@ -119,6 +119,14 @@ public class PlayerBehaviour : MonoBehaviour
             default:
                 sr.color = Color.white;
                 break;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.tag == "Wall")
+        {
+            collider.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
         }
     }
 }
