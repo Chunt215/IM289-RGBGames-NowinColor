@@ -687,6 +687,8 @@ GameObject:
   m_Component:
   - component: {fileID: 351663893}
   - component: {fileID: 351663892}
+  - component: {fileID: 351663895}
+  - component: {fileID: 351663894}
   m_Layer: 0
   m_Name: Exit
   m_TagString: Untagged
@@ -759,6 +761,64 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &351663894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351663891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed2c6a6c928c42bc9ce66d9cf7260ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &351663895
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351663891}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3, y: 2}
+    newSize: {x: 3, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.35, y: 0.089999996}
+      - {x: 0.29, y: 0.13}
+      - {x: 0.19933888, y: 0.16042137}
+      - {x: 0.19423014, y: 0.37711504}
+      - {x: 0.051410254, y: 0.43563998}
+      - {x: -0.042819876, y: 0.44852507}
+      - {x: -0.12357682, y: 0.38953814}
+      - {x: -0.24, y: 0.41281995}
+      - {x: -0.28422982, y: 0.40429503}
+      - {x: -0.25638425, y: 0.24382886}
+      - {x: -0.23773007, y: 0.01678729}
+      - {x: -0.34, y: -0.099999994}
+      - {x: -0.35, y: -0.12}
+      - {x: -0.33281985, y: -0.17993505}
+      - {x: -0.23586883, y: -0.23236346}
+      - {x: -0.25275528, y: -0.39423004}
+      - {x: -0.19999999, y: -0.45999998}
+      - {x: 0.099999994, y: -0.45999998}
+      - {x: 0.21, y: -0.34}
+      - {x: 0.32999998, y: -0.19999999}
+      - {x: 0.35, y: 0.02}
 --- !u!4 &422101511 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6076553517571110489, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
