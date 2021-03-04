@@ -82,6 +82,37 @@ public class PlayerBehaviour : MonoBehaviour
         if(collision.gameObject.tag == "Platform")
         {
             canJump = true;
+            collision.gameObject.GetComponent<SpriteRenderer>().color = sr.color;
+        }
+
+        if(collision.gameObject.tag == "Wall")
+        {
+            if(collision.gameObject.GetComponent<SpriteRenderer>().color == sr.color)
+            {
+                Destroy(collision.gameObject.GetComponent<BoxCollider2D>());
+            }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        switch(collider.tag)
+        {
+            case "Blue":
+                sr.color = Color.blue;
+                break;
+            case "Red":
+                sr.color = Color.red;
+                break;
+            case "Green":
+                sr.color = Color.green;
+                break;
+            case "Yellow":
+                sr.color = Color.yellow;
+                break;
+            default:
+                sr.color = Color.white;
+                break;
         }
     }
 }
