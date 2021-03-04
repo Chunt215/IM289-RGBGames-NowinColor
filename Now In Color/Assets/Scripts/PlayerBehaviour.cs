@@ -4,6 +4,7 @@ Player movement and stuff
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerBehaviour : MonoBehaviour
 {
@@ -31,6 +32,11 @@ public class PlayerBehaviour : MonoBehaviour
     {
         Movement();
         Jumping();
+
+        if(transform.position.y < -9)
+        {
+            SceneManager.LoadScene("GameScene");
+        }
     }
 
     void Movement()
