@@ -16,6 +16,7 @@ public class PlayerBehaviour : MonoBehaviour
     private SpriteRenderer sr;
     private bool canJump = true;
     private Animator anim;
+    private Color purple;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,7 @@ public class PlayerBehaviour : MonoBehaviour
         sr = this.gameObject.GetComponent<SpriteRenderer>();
 
         anim = GetComponent<Animator>();
-        
+        purple = new Color(.5f, 0, 1);
     }
 
     // Update is called once per frame
@@ -104,21 +105,26 @@ public class PlayerBehaviour : MonoBehaviour
     {
         switch(collider.tag)
         {
-            case "Blue":
-                sr.color = Color.blue;
-                break;
+            //case "Blue":
+            //    sr.color = Color.blue;
+            //    break;
             case "Red":
                 sr.color = Color.red;
                 break;
-            case "Green":
-                sr.color = Color.green;
-                break;
-            case "Yellow":
-                sr.color = Color.yellow;
-                break;
+            //case "Green":
+            //    sr.color = Color.green;
+            //    break;
+            //case "Yellow":
+            //    sr.color = Color.yellow;
+            //    break;
             default:
                 sr.color = Color.white;
                 break;
+        }
+
+        if(collider.tag == "Blue" && sr.color == Color.red)
+        {
+            sr.color = purple;
         }
     }
 
