@@ -18,6 +18,8 @@ public class PlayerBehaviour : MonoBehaviour
     private Animator anim;
     private Color purple;
     private Color orange;
+    private List<Color> primaries = new List<Color>();
+    private List<Color> secondaries = new List<Color>();
 
     // Start is called before the first frame update
     void Start()
@@ -26,8 +28,14 @@ public class PlayerBehaviour : MonoBehaviour
         sr = this.gameObject.GetComponent<SpriteRenderer>();
 
         anim = GetComponent<Animator>();
-        purple = new Color(.5f, 0, 1);
+        purple = new Color(0.5f, 0, 1);
         orange = new Color(1, 0.5f, 0);
+        primaries.Add(Color.red);
+        primaries.Add(Color.blue);
+        primaries.Add(Color.yellow);
+        secondaries.Add(orange);
+        secondaries.Add(purple);
+        secondaries.Add(Color.green);
     }
 
     // Update is called once per frame
@@ -105,7 +113,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (sr.color == Color.white)
+        if (sr.color == Color.white || !CheckMixable())
         {
             switch (collider.tag)
             {
@@ -123,28 +131,28 @@ public class PlayerBehaviour : MonoBehaviour
                     //break;
             }
         }
-            
-        if(collider.tag == "Blue" && sr.color == Color.red)
+        else if(CheckMixable())
         {
-            sr.color = purple;
+            if (collider.tag == "Blue" && sr.color == Color.red)
+            {
+                sr.color = purple;
+            }
+
+            if (collider.tag == "Red" && sr.color == Color.blue)
+            {
+                sr.color = purple;
+            }
+
+            if (collider.tag == "Yellow" && sr.color == Color.red)
+            {
+                sr.color = orange;
+            }
+
+            if (collider.tag == "Red" && sr.color == Color.yellow)
+            {
+                sr.color = orange;
+            }
         }
-
-        if (collider.tag == "Red" && sr.color == Color.blue)
-        {
-            sr.color = purple;
-        }
-
-        if (collider.tag == "Yellow" && sr.color == Color.red)
-        {
-            sr.color = orange;
-        }
-
-        if (collider.tag == "Red" && sr.color == Color.yellow)
-        {
-            sr.color = orange;
-        }
-
-
     }
 
     void OnTriggerExit2D(Collider2D collider)
@@ -153,5 +161,24 @@ public class PlayerBehaviour : MonoBehaviour
         {
             collider.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
         }
+    }
+
+    bool CheckMixable()
+    {
+        bool canMix = false;
+
+        for(int i = 0; i < primaries.Count; i++)
+        {
+            if(primaries[i] == sr.color)
+            {
+                canMix = true;
+            }
+            else
+            {
+                canMix = false;
+            }
+        }
+
+        return canMix;
     }
 }
