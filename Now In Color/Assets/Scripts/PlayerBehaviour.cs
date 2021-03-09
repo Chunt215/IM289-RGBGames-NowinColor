@@ -17,6 +17,7 @@ public class PlayerBehaviour : MonoBehaviour
     private bool canJump = true;
     private Animator anim;
     private Color purple;
+    private Color orange;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         anim = GetComponent<Animator>();
         purple = new Color(.5f, 0, 1);
+        orange = new Color(1, 0.5f, 0);
     }
 
     // Update is called once per frame
@@ -103,29 +105,46 @@ public class PlayerBehaviour : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        switch(collider.tag)
+        if (sr.color == Color.white)
         {
-            //case "Blue":
-            //    sr.color = Color.blue;
-            //    break;
-            case "Red":
-                sr.color = Color.red;
-                break;
-            //case "Green":
-            //    sr.color = Color.green;
-            //    break;
-            //case "Yellow":
-            //    sr.color = Color.yellow;
-            //    break;
-            //default:
-               // sr.color = Color.white;
-                //break;
+            switch (collider.tag)
+            {
+                case "Blue":
+                    sr.color = Color.blue;
+                    break;
+                case "Red":
+                    sr.color = Color.red;
+                    break;
+                case "Yellow":
+                     sr.color = Color.yellow;
+                    break;
+                    //default:
+                    // sr.color = Color.white;
+                    //break;
+            }
         }
-
+            
         if(collider.tag == "Blue" && sr.color == Color.red)
         {
             sr.color = purple;
         }
+
+        if (collider.tag == "Red" && sr.color == Color.blue)
+        {
+            sr.color = purple;
+        }
+
+        if (collider.tag == "Yellow" && sr.color == Color.red)
+        {
+            sr.color = orange;
+        }
+
+        if (collider.tag == "Red" && sr.color == Color.yellow)
+        {
+            sr.color = orange;
+        }
+
+
     }
 
     void OnTriggerExit2D(Collider2D collider)
