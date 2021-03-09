@@ -117,9 +117,9 @@ public class PlayerBehaviour : MonoBehaviour
             //case "Yellow":
             //    sr.color = Color.yellow;
             //    break;
-            default:
-                sr.color = Color.white;
-                break;
+            //default:
+               // sr.color = Color.white;
+                //break;
         }
 
         if(collider.tag == "Blue" && sr.color == Color.red)
