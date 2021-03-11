@@ -7,6 +7,6 @@ public class ExitBehavior : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("Level 4 Temp");
     }
 }
