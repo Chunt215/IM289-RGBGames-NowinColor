@@ -5,8 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class ExitBehavior : MonoBehaviour
 {
+    public GameObject gcObject;
+    private GameController gc;
+
+    void Start()
+    {
+        gc = gcObject.GetComponent<GameController>();
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene("Level 4 Temp");
+        if(gc.canExit)
+        {
+            SceneManager.LoadScene("Level 4 Temp");
+        }
     }
 }
