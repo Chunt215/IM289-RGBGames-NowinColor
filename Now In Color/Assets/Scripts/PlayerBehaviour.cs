@@ -131,7 +131,7 @@ public class PlayerBehaviour : MonoBehaviour
                     //break;
             }
         }
-        else if(CheckMixable())
+        else if (CheckMixable())
         {
             if (collider.tag == "Blue" && sr.color == Color.red)
             {
@@ -152,6 +152,16 @@ public class PlayerBehaviour : MonoBehaviour
             {
                 sr.color = orange;
             }
+
+            if (collider.tag == "Yellow" && sr.color == Color.blue)
+            {
+                sr.color = Color.green;
+            }
+
+            if (collider.tag == "Blue" && sr.color == Color.yellow)
+            {
+                sr.color = Color.green;
+            }
         }
     }
 
@@ -169,9 +179,10 @@ public class PlayerBehaviour : MonoBehaviour
 
         for(int i = 0; i < primaries.Count; i++)
         {
-            if(primaries[i] == sr.color)
+            if(sr.color == primaries[i])
             {
                 canMix = true;
+                return canMix;
             }
             else
             {
