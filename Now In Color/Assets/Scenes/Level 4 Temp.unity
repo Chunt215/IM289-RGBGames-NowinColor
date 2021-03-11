@@ -773,6 +773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed2c6a6c928c42bc9ce66d9cf7260ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gcObject: {fileID: 521125544}
 --- !u!60 &351663895
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1014,6 +1015,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03633fda6ac97f8488140a6c6ab5057d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  platforms: []
+  canExit: 0
 --- !u!4 &521125546
 Transform:
   m_ObjectHideFlags: 0
