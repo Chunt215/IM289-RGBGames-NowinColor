@@ -10,6 +10,7 @@ TagManager:
   - Green
   - Wall
   - Yellow
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
