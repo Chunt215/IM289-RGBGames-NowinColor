@@ -53,9 +53,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if(transform.position.y < -9)
         {
-            lives -= damage;
-            ChangeHealth();
-            transform.position = checkpointPos;
+            LifeLost(); ;
         }
 
         if (lives == 0)
@@ -122,6 +120,19 @@ public class PlayerBehaviour : MonoBehaviour
             {
                 collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
             }
+        }
+
+        // If the player collides with the turning objects
+        // Have the layer the player is on ignore the layer the turns are on
+        if(collision.gameObject.CompareTag("TurnRight") || 
+           collision.gameObject.CompareTag("TurnLeft"))
+        {
+            Physics2D.IgnoreLayerCollision(3, 8);
+        }
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            LifeLost();
         }
     }
 
@@ -215,5 +226,12 @@ public class PlayerBehaviour : MonoBehaviour
     void ChangeHealth()
     {
         livesText.text = lives.ToString("0");
+    }
+
+    void LifeLost()
+    {
+        lives -= damage;
+        ChangeHealth();
+        transform.position = checkpointPos;
     }
 }

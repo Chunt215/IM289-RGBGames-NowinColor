@@ -5,41 +5,65 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    public float speed = 100;
+    public float speed = 3f;
     public Rigidbody2D rb2d;
-    public LayerMask groundCheck;
 
-    private bool facingRight = true;
+    private SpriteRenderer sr;
+    private bool isLeft = true;
+    private bool isRight = false;
 
-    RaycastHit2D hit;
-
-    void Update()
+    void Start()
     {
-        // Shoot a raycast downwards from the position of the enemy to
-        // check for the ground
-        hit = Physics2D.Raycast(rb2d.position, rb2d.position + Vector2.down
-              , groundCheck);
+        rb2d = this.gameObject.GetComponent<Rigidbody2D>();
+        sr = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
     void FixedUpdate()
     {
-        if(hit.collider != false)
+        if (isLeft == true && isRight == false)
         {
-            if (facingRight)
-            {
-                rb2d.velocity = new Vector2(speed * Time.deltaTime, 
-                                rb2d.velocity.y);
-            }
-            else
-            {
-                rb2d.velocity = new Vector2(-speed * Time.deltaTime,
-                                rb2d.velocity.y);
-            }
+            MoveLeft();
         }
-        else
+        else if (isRight == true && isLeft == false)
         {
-            facingRight = !facingRight;
-            transform.localScale = new Vector2(-transform.localScale.x, 1f);
+            MoveRight();
         }
     }
+
+    void MoveLeft()
+    {
+        rb2d.velocity = -transform.right * speed * Time.deltaTime;
+        rb2d.AddForce(-transform.right);
+    }
+
+    void MoveRight()
+    {
+        rb2d.velocity = transform.right * speed * Time.deltaTime;
+        rb2d.AddForce(transform.right);
+    }
+
+    void Flip()
+    {
+        transform.localScale = new Vector2(transform.localScale.x * -1
+                                   , transform.localScale.y);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // If player hits the turnRight object, switch facing/move directions 
+        if (collision.gameObject.CompareTag("TurnRight"))
+        {
+            isLeft = false;
+            isRight = true;
+            Flip();
+        }
+        // If player hits the turnLeft object, switch facing/move directions 
+        else if (collision.gameObject.CompareTag("TurnLeft"))
+        {
+            isLeft = true;
+            isRight = false;
+            Flip();
+        }
+    }
+
 }
