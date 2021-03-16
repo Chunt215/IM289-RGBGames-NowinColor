@@ -176,7 +176,7 @@ public class PlayerBehaviour : MonoBehaviour
     bool CheckMixable()
     {
         bool canMix = false;
-
+            
         for(int i = 0; i < primaries.Count; i++)
         {
             if(sr.color == primaries[i])
