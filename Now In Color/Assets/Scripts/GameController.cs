@@ -3,16 +3,19 @@ spawning and platform behaviour stuff
 */
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
     public List<GameObject> platforms;
     public bool canExit = false;
+    private string sceneName;
 
     // Start is called before the first frame update
     void Start()
     {
         platforms = new List<GameObject>(GameObject.FindGameObjectsWithTag("Platform"));
+        sceneName = SceneManager.GetActiveScene().name;
     }
 
     // Update is called once per frame
@@ -34,18 +37,68 @@ public class GameController : MonoBehaviour
     {
         bool colored = false;
 
-        for(int i = 0; i < platforms.Count; i++)
+        switch (sceneName)
         {
-            SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
-            if (platformSR.color == Color.white)
-            {
-                colored = false;
-                return colored;
-            }
-            else
-            {
-                colored = true;
-            }
+            case "Level 0":
+                for (int i = 0; i < platforms.Count; i++)
+                {
+                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                    if (platformSR.color == Color.white)
+                    {
+                        colored = false;
+                        return colored;
+                    }
+                    else
+                    {
+                        colored = true;
+                    }
+                }
+                break;
+            case "Level 1":
+                for (int i = 0; i < platforms.Count; i++)
+                {
+                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                    if (platformSR.color == Color.white)
+                    {
+                        colored = false;
+                        return colored;
+                    }
+                    else
+                    {
+                        colored = true;
+                    }
+                }
+                break;
+            case "Level 2":
+                for (int i = 0; i < platforms.Count; i++)
+                {
+                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                    if (platformSR.color == Color.white)
+                    {
+                        colored = false;
+                        return colored;
+                    }
+                    else
+                    {
+                        colored = true;
+                    }
+                }
+                break;
+            case "Level 4 Temp":
+                for (int i = 0; i < platforms.Count; i++)
+                {
+                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                    if (platformSR.color == Color.white)
+                    {
+                        colored = false;
+                        return colored;
+                    }
+                    else
+                    {
+                        colored = true;
+                    }
+                }
+                break;
         }
 
         return colored;
