@@ -10,16 +10,20 @@ TagManager:
   - Green
   - Wall
   - Yellow
+  - Checkpoint
+  - TurnRight
+  - TurnLeft
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Platforms
   - 
-  - 
+  - Turn
   - 
   - 
   - 

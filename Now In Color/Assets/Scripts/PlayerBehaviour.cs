@@ -1,18 +1,23 @@
 /*
 Player movement and stuff 
 */
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerBehaviour : MonoBehaviour
 {
     public Rigidbody2D rb2d;
     public float speed = 5.0f;
     public float jumpForce = 100;
+    public int lives = 3;
     public LayerMask mask;
+    public Text livesText;
+    public int damage = 1;
+    public Vector2 checkpointPos;
 
+    private GameController gc;
     private SpriteRenderer sr;
     private bool canJump = true;
     private Animator anim;
@@ -26,6 +31,8 @@ public class PlayerBehaviour : MonoBehaviour
     {
         rb2d = this.gameObject.GetComponent<Rigidbody2D>();
         sr = this.gameObject.GetComponent<SpriteRenderer>();
+        gc = this.gameObject.GetComponent<GameController>();
+        
 
         anim = GetComponent<Animator>();
         purple = new Color(0.5f, 0, 1);
@@ -46,7 +53,12 @@ public class PlayerBehaviour : MonoBehaviour
 
         if(transform.position.y < -9)
         {
-            SceneManager.LoadScene("GameScene");
+            LifeLost(); ;
+        }
+
+        if (lives == 0)
+        {
+            SceneManager.LoadScene(0);
         }
     }
 
@@ -109,6 +121,19 @@ public class PlayerBehaviour : MonoBehaviour
                 collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
             }
         }
+
+        // If the player collides with the turning objects
+        // Have the layer the player is on ignore the layer the turns are on
+        if(collision.gameObject.CompareTag("TurnRight") || 
+           collision.gameObject.CompareTag("TurnLeft"))
+        {
+            Physics2D.IgnoreLayerCollision(3, 8);
+        }
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            LifeLost();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -129,6 +154,11 @@ public class PlayerBehaviour : MonoBehaviour
                     //default:
                     // sr.color = Color.white;
                     //break;
+            }
+
+            if (collider.CompareTag("Checkpoint"))
+            {
+                checkpointPos = collider.transform.position;
             }
         }
         else if (CheckMixable())
@@ -191,5 +221,17 @@ public class PlayerBehaviour : MonoBehaviour
         }
 
         return canMix;
+    }
+
+    void ChangeHealth()
+    {
+        livesText.text = lives.ToString("0");
+    }
+
+    void LifeLost()
+    {
+        lives -= damage;
+        ChangeHealth();
+        transform.position = checkpointPos;
     }
 }
