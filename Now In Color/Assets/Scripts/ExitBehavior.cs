@@ -28,7 +28,7 @@ public class ExitBehavior : MonoBehaviour
                     SceneManager.LoadScene("Level 2");
                     break;
                 case "Level 2":
-                    SceneManager.LoadScene("Level 4 Temp");
+                    SceneManager.LoadScene("Level 4");
                     break;
             }
         }
