@@ -7,11 +7,7 @@ public class ExitBehavior : MonoBehaviour
 {
     public GameObject gcObject;
     private GameController gc;
-<<<<<<< Updated upstream
-    public int currentLevel;
-=======
     private string sceneName;
->>>>>>> Stashed changes
 
     void Start()
     {
@@ -21,15 +17,7 @@ public class ExitBehavior : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(gc.canExit && currentLevel == 0)
-        {
-            SceneManager.LoadScene("Level 1");
-        }
-        else if(gc.canExit && currentLevel == 1)
-        {
-            SceneManager.LoadScene("Level 2");
-        }
-        else if (gc.canExit && currentLevel == 2)
+        if (gc.canExit)
         {
             switch(sceneName)
             {
