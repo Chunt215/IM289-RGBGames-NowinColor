@@ -16,6 +16,7 @@ public class PlayerBehaviour : MonoBehaviour
     public Text livesText;
     public int damage = 1;
     public Vector2 checkpointPos;
+    public bool canKill = false;
 
     private GameController gc;
     private SpriteRenderer sr;
@@ -144,12 +145,21 @@ public class PlayerBehaviour : MonoBehaviour
             {
                 case "Blue":
                     sr.color = Color.blue;
+                    canKill = false;
+                    speed = 5.0f;
+                    jumpForce = 300;
                     break;
                 case "Red":
                     sr.color = Color.red;
+                    canKill = false;
+                    speed = 5.0f;
+                    jumpForce = 300;
                     break;
                 case "Yellow":
                      sr.color = Color.yellow;
+                    canKill = false;
+                    speed = 5.0f;
+                    jumpForce = 300;
                     break;
                     //default:
                     // sr.color = Color.white;
@@ -166,31 +176,49 @@ public class PlayerBehaviour : MonoBehaviour
             if (collider.tag == "Blue" && sr.color == Color.red)
             {
                 sr.color = purple;
+                jumpForce = 600;
+                speed = 5.0f;
+                canKill = false;
             }
 
             if (collider.tag == "Red" && sr.color == Color.blue)
             {
                 sr.color = purple;
+                jumpForce = 600;
+                speed = 5.0f;
+                canKill = false;
             }
 
             if (collider.tag == "Yellow" && sr.color == Color.red)
             {
                 sr.color = orange;
+                speed = 10.0f;
+                jumpForce = 300;
+                canKill = false;
             }
 
             if (collider.tag == "Red" && sr.color == Color.yellow)
             {
                 sr.color = orange;
+                speed = 10.0f;
+                jumpForce = 300;
+                canKill = false;
             }
 
             if (collider.tag == "Yellow" && sr.color == Color.blue)
             {
                 sr.color = Color.green;
+                canKill = true;
+                speed = 5.0f;
+                jumpForce = 300;
             }
 
             if (collider.tag == "Blue" && sr.color == Color.yellow)
             {
                 sr.color = Color.green;
+                canKill = true;
+                speed = 5.0f;
+                jumpForce = 300;
             }
         }
     }
