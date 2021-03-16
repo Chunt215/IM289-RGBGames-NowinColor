@@ -1355,7 +1355,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &829518813
 PrefabInstance:
@@ -1488,6 +1488,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1512879993161646531, guid: ff8cf54f133b7a34ca3404e1f38d0f26, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 63.900024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512879993161646531, guid: ff8cf54f133b7a34ca3404e1f38d0f26, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -28.900024
+      objectReference: {fileID: 0}
     - target: {fileID: 1512879994360055648, guid: ff8cf54f133b7a34ca3404e1f38d0f26, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
@@ -1579,6 +1587,10 @@ PrefabInstance:
     - target: {fileID: 1512879994360055678, guid: ff8cf54f133b7a34ca3404e1f38d0f26, type: 3}
       propertyPath: m_Name
       value: PlayerCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512879994430134679, guid: ff8cf54f133b7a34ca3404e1f38d0f26, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 26.199951
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff8cf54f133b7a34ca3404e1f38d0f26, type: 3}
@@ -2484,6 +2496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gcObject: {fileID: 2027629750}
+  currentLevel: 2
 --- !u!60 &1234621151
 PolygonCollider2D:
   m_ObjectHideFlags: 0

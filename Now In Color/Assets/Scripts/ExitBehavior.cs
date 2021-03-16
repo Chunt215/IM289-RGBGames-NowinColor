@@ -7,6 +7,7 @@ public class ExitBehavior : MonoBehaviour
 {
     public GameObject gcObject;
     private GameController gc;
+    public int currentLevel;
 
     void Start()
     {
@@ -15,7 +16,15 @@ public class ExitBehavior : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(gc.canExit)
+        if(gc.canExit && currentLevel == 0)
+        {
+            SceneManager.LoadScene("Level 1");
+        }
+        else if(gc.canExit && currentLevel == 1)
+        {
+            SceneManager.LoadScene("Level 2");
+        }
+        else if (gc.canExit && currentLevel == 2)
         {
             SceneManager.LoadScene("Level 4 Temp");
         }
