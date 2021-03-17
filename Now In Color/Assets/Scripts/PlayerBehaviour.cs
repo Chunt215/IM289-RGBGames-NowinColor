@@ -17,10 +17,15 @@ public class PlayerBehaviour : MonoBehaviour
     public int damage = 1;
     public Vector2 checkpointPos;
     public bool canKill = false;
+    public GameObject bulletPrefab;
+    public Transform firePoint;
+    public int bulletSpeed = 25;
+    public int buletLife = 3;
 
     private GameController gc;
     private SpriteRenderer sr;
     private bool canJump = true;
+    private bool canShoot = true;
     private Animator anim;
     private Color purple;
     private Color orange;
@@ -60,6 +65,11 @@ public class PlayerBehaviour : MonoBehaviour
         if (lives == 0)
         {
             SceneManager.LoadScene(0);
+        }
+
+        if(Input.GetKeyDown(KeyCode.S) && canShoot == true)
+        {
+            Shooting();
         }
     }
 
@@ -261,5 +271,17 @@ public class PlayerBehaviour : MonoBehaviour
         lives -= damage;
         ChangeHealth();
         transform.position = checkpointPos;
+    }
+
+    void Shooting()
+    {
+        GameObject bullet = Instantiate(bulletPrefab, 
+                            firePoint.position, firePoint.rotation);
+
+        Rigidbody2D rb2d = bullet.GetComponent<Rigidbody2D>();
+
+        rb2d.AddRelativeForce(firePoint.right * bulletSpeed);
+
+        Destroy(bullet, buletLife);
     }
 }

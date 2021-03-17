@@ -14,6 +14,7 @@ TagManager:
   - TurnRight
   - TurnLeft
   - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX

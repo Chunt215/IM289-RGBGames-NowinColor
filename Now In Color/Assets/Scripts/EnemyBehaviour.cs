@@ -8,14 +8,12 @@ public class EnemyBehaviour : MonoBehaviour
     public float speed = 3f;
     public Rigidbody2D rb2d;
 
-    private SpriteRenderer sr;
     private bool isLeft = true;
     private bool isRight = false;
 
     void Start()
     {
         rb2d = this.gameObject.GetComponent<Rigidbody2D>();
-        sr = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
     void FixedUpdate()
@@ -63,6 +61,12 @@ public class EnemyBehaviour : MonoBehaviour
             isLeft = true;
             isRight = false;
             Flip();
+        }
+
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            Destroy(this.gameObject);
+            Destroy(collision.gameObject);
         }
     }
 
