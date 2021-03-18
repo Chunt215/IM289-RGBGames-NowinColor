@@ -67,7 +67,7 @@ public class PlayerBehaviour : MonoBehaviour
             SceneManager.LoadScene(0);
         }
 
-        if(Input.GetKeyDown(KeyCode.S) && canShoot == true)
+        if(Input.GetKeyDown(KeyCode.LeftShift) && canShoot == true)
         {
             Shooting();
         }
