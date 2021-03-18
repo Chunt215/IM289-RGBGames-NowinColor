@@ -277,14 +277,31 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (sr.color == Color.green)
         {
-            GameObject bullet = Instantiate(bulletPrefab,
+            float xMove = Input.GetAxis("Horizontal");
+
+            if (xMove != 0)
+            {
+                GameObject bullet = Instantiate(bulletPrefab,
                                 firePoint.position, firePoint.rotation);
 
-            Rigidbody2D rb2d = bullet.GetComponent<Rigidbody2D>();
+                Rigidbody2D rb2d = bullet.GetComponent<Rigidbody2D>();
 
-            rb2d.AddRelativeForce(firePoint.right * bulletSpeed);
+                rb2d.AddRelativeForce(firePoint.right * bulletSpeed);
 
-            Destroy(bullet, bulletLife);
+                Destroy(bullet, bulletLife);
+            }
+            else
+            {
+                GameObject bullet = Instantiate(bulletPrefab,
+                                new Vector3(firePoint.transform.position.x - 1.62f, firePoint.transform.position.y), firePoint.rotation);
+
+                Rigidbody2D rb2d = bullet.GetComponent<Rigidbody2D>();
+
+                rb2d.AddRelativeForce(-firePoint.right * bulletSpeed);
+
+                Destroy(bullet, bulletLife);
+            }
+
         }
     }
 }
