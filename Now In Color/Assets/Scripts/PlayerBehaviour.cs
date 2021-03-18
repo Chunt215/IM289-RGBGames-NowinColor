@@ -20,7 +20,7 @@ public class PlayerBehaviour : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
     public int bulletSpeed = 25;
-    public int buletLife = 3;
+    public int bulletLife = 3;
 
     private GameController gc;
     private SpriteRenderer sr;
@@ -59,7 +59,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if(transform.position.y < -9)
         {
-            LifeLost(); ;
+            LifeLost();
         }
 
         if (lives == 0)
@@ -263,7 +263,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     void ChangeHealth()
     {
-        livesText.text = lives.ToString("0");
+        livesText.text = lives.ToString();
     }
 
     void LifeLost()
@@ -282,6 +282,6 @@ public class PlayerBehaviour : MonoBehaviour
 
         rb2d.AddRelativeForce(firePoint.right * bulletSpeed);
 
-        Destroy(bullet, buletLife);
+        Destroy(bullet, bulletLife);
     }
 }
