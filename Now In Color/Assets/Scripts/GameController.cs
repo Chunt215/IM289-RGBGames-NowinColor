@@ -84,7 +84,7 @@ public class GameController : MonoBehaviour
                     }
                 }
                 break;
-            case "Level 4":
+            case "Level 4 Temp":
                 for (int i = 0; i < platforms.Count; i++)
                 {
                     SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
