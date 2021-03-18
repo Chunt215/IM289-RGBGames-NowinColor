@@ -277,9 +277,8 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (sr.color == Color.green)
         {
-            float xMove = Input.GetAxis("Horizontal");
 
-            if (xMove != 0)
+            if (sr.flipX == false)
             {
                 GameObject bullet = Instantiate(bulletPrefab,
                                 firePoint.position, firePoint.rotation);
