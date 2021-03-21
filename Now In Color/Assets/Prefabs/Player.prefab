@@ -197,7 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 0}
   speed: 5
-  jumpForce: 350
+  jumpForce: 300
   lives: 3
   mask:
     serializedVersion: 2

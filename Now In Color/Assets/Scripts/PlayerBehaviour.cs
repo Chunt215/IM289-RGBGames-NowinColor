@@ -161,19 +161,19 @@ public class PlayerBehaviour : MonoBehaviour
                     sr.color = Color.blue;
                     canKill = false;
                     speed = 5.0f;
-                    jumpForce = 350;
+                    jumpForce = 300;
                     break;
                 case "Red":
                     sr.color = Color.red;
                     canKill = false;
                     speed = 5.0f;
-                    jumpForce = 350;
+                    jumpForce = 300;
                     break;
                 case "Yellow":
                      sr.color = Color.yellow;
                     canKill = false;
                     speed = 5.0f;
-                    jumpForce = 350;
+                    jumpForce = 300;
                     break;
                     //default:
                     // sr.color = Color.white;
