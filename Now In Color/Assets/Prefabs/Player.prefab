@@ -197,7 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 0}
   speed: 5
-  jumpForce: 300
+  jumpForce: 350
   lives: 3
   mask:
     serializedVersion: 2
@@ -209,4 +209,4 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7431347243740720040, guid: c2d9c00c6ed45744cb9c33efbe894717, type: 3}
   firePoint: {fileID: 2051835188}
   bulletSpeed: 300
-  buletLife: 3
+  bulletLife: 3
