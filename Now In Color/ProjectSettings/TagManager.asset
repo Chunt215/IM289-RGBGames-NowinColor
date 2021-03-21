@@ -15,6 +15,10 @@ TagManager:
   - TurnLeft
   - Enemy
   - Bullet
+  - Start
+  - Help
+  - Menu
+  - Credits
   layers:
   - Default
   - TransparentFX

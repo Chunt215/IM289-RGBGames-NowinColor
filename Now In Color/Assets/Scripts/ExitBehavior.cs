@@ -30,6 +30,9 @@ public class ExitBehavior : MonoBehaviour
                 case "Level 2":
                     SceneManager.LoadScene("Level 4");
                     break;
+                case "Level 4":
+                    SceneManager.LoadScene("End Game");
+                    break;
             }
         }
     }
