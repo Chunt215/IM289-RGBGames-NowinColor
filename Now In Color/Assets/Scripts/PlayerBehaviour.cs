@@ -11,24 +11,29 @@ public class PlayerBehaviour : MonoBehaviour
     public Rigidbody2D rb2d;
     public float speed = 5.0f;
     public float jumpForce = 100;
+
     public int lives = 3;
     public LayerMask mask;
     public Text livesText;
     public int damage = 1;
     public Vector2 checkpointPos;
+
     public bool canKill = false;
     public GameObject bulletPrefab;
     public Transform firePoint;
     public int bulletSpeed = 25;
     public int bulletLife = 3;
 
-    private GameController gc;
     private SpriteRenderer sr;
+
     private bool canJump = true;
     private bool canShoot = true;
+
     private Animator anim;
+
     private Color purple;
     private Color orange;
+
     private List<Color> primaries = new List<Color>();
     private List<Color> secondaries = new List<Color>();
 
@@ -37,7 +42,6 @@ public class PlayerBehaviour : MonoBehaviour
     {
         rb2d = this.gameObject.GetComponent<Rigidbody2D>();
         sr = this.gameObject.GetComponent<SpriteRenderer>();
-        gc = this.gameObject.GetComponent<GameController>();
         
 
         anim = GetComponent<Animator>();
