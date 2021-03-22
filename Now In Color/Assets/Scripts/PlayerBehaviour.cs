@@ -18,6 +18,9 @@ public class PlayerBehaviour : MonoBehaviour
     public int damage = 1;
     public Vector2 checkpointPos;
 
+    public int coins = 0;
+    public Text coinText;
+
     public bool canKill = false;
     public GameObject bulletPrefab;
     public Transform firePoint;
@@ -148,6 +151,13 @@ public class PlayerBehaviour : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             LifeLost();
+        }
+
+        if(collision.gameObject.CompareTag("Coin"))
+        {
+            coins++;
+            coinText.text = coins.ToString();
+            Destroy(collision.gameObject);
         }
     }
 

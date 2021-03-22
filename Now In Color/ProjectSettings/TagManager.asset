@@ -19,6 +19,7 @@ TagManager:
   - Help
   - Menu
   - Credits
+  - Coin
   layers:
   - Default
   - TransparentFX
