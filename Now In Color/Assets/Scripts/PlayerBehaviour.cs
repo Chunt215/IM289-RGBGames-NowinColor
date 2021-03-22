@@ -68,7 +68,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (lives == 0)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("End Game");
         }
 
         if(Input.GetKeyDown(KeyCode.LeftShift) && canShoot == true)
