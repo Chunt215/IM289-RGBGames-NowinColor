@@ -19,6 +19,13 @@ public class Buttons : MonoBehaviour
             case "Credits":
                 Invoke("LoadCredits", 0.25f);
                 break;
+            case "Quit":
+                Invoke("LoadQuit", 0.25f);
+                break;
+            case "Play Again":
+                Invoke("LoadReplay", 0.25f);
+                break;
+
         }
     }
 
@@ -40,5 +47,15 @@ public class Buttons : MonoBehaviour
     public void LoadCredits()
     {
         SceneManager.LoadScene("Credits");
+    }
+
+    public void LoadQuit()
+    {
+        Application.Quit();
+    }
+
+    public void LoadReplay()
+    {
+        SceneManager.LoadScene("Level 0");
     }
 }

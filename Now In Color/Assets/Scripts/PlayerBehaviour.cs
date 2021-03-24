@@ -12,7 +12,7 @@ public class PlayerBehaviour : MonoBehaviour
     public float speed = 5.0f;
     public float jumpForce = 100;
 
-    public int lives = 3;
+    static public int lives = 3;
     public LayerMask mask;
     public Text livesText;
     public int damage = 1;
@@ -71,7 +71,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (lives == 0)
         {
-            SceneManager.LoadScene("End Game");
+            SceneManager.LoadScene("Game Over");
         }
 
         if(Input.GetKeyDown(KeyCode.LeftShift) && canShoot == true)
