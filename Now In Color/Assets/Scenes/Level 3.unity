@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-=======
->>>>>>> Level-3-changes
 --- !u!1001 &22485714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -664,11 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed2c6a6c928c42bc9ce66d9cf7260ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   gcObject: {fileID: 0}
-=======
-  gcObject: {fileID: 1091245267}
->>>>>>> Level-3-changes
 --- !u!212 &571640815
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -904,10 +895,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6076553517571110489, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
   m_PrefabInstance: {fileID: 534092234}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
->>>>>>> Level-3-changes
 --- !u!1 &1007318108
 GameObject:
   m_ObjectHideFlags: 0
