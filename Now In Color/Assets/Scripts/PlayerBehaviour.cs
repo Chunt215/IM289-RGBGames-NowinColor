@@ -27,10 +27,11 @@ public class PlayerBehaviour : MonoBehaviour
     public int bulletSpeed = 25;
     public int bulletLife = 3;
 
-    private SpriteRenderer sr;
+    public SpriteRenderer sr;
+    private string sceneName;
 
     private bool canJump = true;
-    private bool canShoot = true;
+    public bool canShoot = true;
 
     private Animator anim;
 
@@ -45,7 +46,6 @@ public class PlayerBehaviour : MonoBehaviour
     {
         rb2d = this.gameObject.GetComponent<Rigidbody2D>();
         sr = this.gameObject.GetComponent<SpriteRenderer>();
-        
 
         anim = GetComponent<Animator>();
         purple = new Color(0.5f, 0, 1);

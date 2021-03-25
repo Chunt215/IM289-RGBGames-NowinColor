@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 2836399601374428581}
   - component: {fileID: 2836399601374428580}
   - component: {fileID: 7025688984283069536}
-  - component: {fileID: 8731726022175996709}
+  - component: {fileID: 8057290573658713361}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f43eb0e06a78b4e4192ac21c058c2120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!60 &8731726022175996709
+--- !u!60 &8057290573658713361
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
