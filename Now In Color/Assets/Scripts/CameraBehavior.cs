@@ -2,8 +2,15 @@ using UnityEngine;
 
 public class CameraBehavior : MonoBehaviour
 {
+    public GameObject playerObj;
     public Transform target;
     public float cameraSpeed = 150;
+
+    void Start()
+    {
+        playerObj = GameObject.Find("Player");
+        target = playerObj.GetComponent<Transform>();
+    }
 
     // Update is called once per frame
     void Update()
