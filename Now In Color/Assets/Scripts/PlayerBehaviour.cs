@@ -71,6 +71,9 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (lives == 0)
         {
+            lives = 3;
+            Destroy(livesText);
+            Destroy(gameObject);
             SceneManager.LoadScene("Game Over");
         }
 
