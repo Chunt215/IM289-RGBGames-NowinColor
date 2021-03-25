@@ -26,7 +26,7 @@ public class ExitBehavior : MonoBehaviour
             player.sr.color = Color.white;
             player.jumpForce = 300f;
             player.speed = 5.0f;
-            player.canShoot = false;
+            player.canKill = false;
             switch (sceneName)
             {
                 case "Level 0":

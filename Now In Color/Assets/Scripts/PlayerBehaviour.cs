@@ -77,7 +77,7 @@ public class PlayerBehaviour : MonoBehaviour
             SceneManager.LoadScene("Game Over");
         }
 
-        if(Input.GetKeyDown(KeyCode.LeftShift) && canShoot == true)
+        if(Input.GetKeyDown(KeyCode.LeftShift) && canKill == true)
         {
             Shooting();
         }
