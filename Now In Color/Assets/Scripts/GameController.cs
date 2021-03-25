@@ -84,6 +84,21 @@ public class GameController : MonoBehaviour
                     }
                 }
                 break;
+            case "Level 3":
+                for (int i = 0; i < platforms.Count; i++)
+                {
+                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                    if (platformSR.color == Color.white)
+                    {
+                        colored = false;
+                        return colored;
+                    }
+                    else
+                    {
+                        colored = true;
+                    }
+                }
+                break;
             case "Level 4":
                 for (int i = 0; i < platforms.Count; i++)
                 {
