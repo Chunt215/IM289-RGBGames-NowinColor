@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2836399601374428580}
   - component: {fileID: 7025688984283069536}
   - component: {fileID: 8057290573658713361}
+  - component: {fileID: 2836399601617421666}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -186,6 +187,8 @@ MonoBehaviour:
   firePoint: {fileID: 2051835188}
   bulletSpeed: 300
   bulletLife: 3
+  sr: {fileID: 0}
+  canShoot: 1
 --- !u!114 &7025688984283069536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,3 +261,15 @@ PolygonCollider2D:
       - {x: 0.035, y: -0.93}
       - {x: 0.065, y: -0.83}
       - {x: 0.095, y: -1}
+--- !u!114 &2836399601617421666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2836399601374428579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f43eb0e06a78b4e4192ac21c058c2120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
