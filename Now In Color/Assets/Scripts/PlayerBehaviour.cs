@@ -63,6 +63,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         Movement();
         Jumping();
+        Crouching();
 
         if(transform.position.y < -9)
         {
@@ -126,6 +127,18 @@ public class PlayerBehaviour : MonoBehaviour
         //    anim.SetBool("jumping", true);
         //}
         anim.SetBool("jumping", !canJump);
+    }
+
+    void Crouching()
+    {
+        if (Input.GetKey(KeyCode.C))
+        {
+            anim.SetBool("canCrouch", true);
+        }
+        else
+        {
+            anim.SetBool("canCrouch", false);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
