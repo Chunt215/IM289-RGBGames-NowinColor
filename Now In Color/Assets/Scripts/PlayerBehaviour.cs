@@ -162,6 +162,11 @@ public class PlayerBehaviour : MonoBehaviour
             coinText.text = coins.ToString();
             Destroy(collision.gameObject);
         }
+
+        if(collision.gameObject.CompareTag("Color Enemy"))
+        {
+            sr.color = Color.white;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collider)

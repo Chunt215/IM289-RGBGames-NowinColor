@@ -22,6 +22,7 @@ TagManager:
   - Coin
   - Quit
   - Play Again
+  - Color Enemy
   layers:
   - Default
   - TransparentFX
