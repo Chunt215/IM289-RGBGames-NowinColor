@@ -73,14 +73,29 @@ public class GameController : MonoBehaviour
                 for (int i = 0; i < platforms.Count; i++)
                 {
                     SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
-                    if (platformSR.color == Color.white)
+                    if(i >= 0 && i < 15)
                     {
-                        colored = false;
-                        return colored;
+                        if (platformSR.color == Color.white || platformSR.color != Color.yellow)
+                        {
+                            colored = false;
+                            return colored;
+                        }
+                        else if(platformSR.color == Color.yellow)
+                        {
+                            colored = true;
+                        }
                     }
-                    else
+                    else if (i >= 15)
                     {
-                        colored = true;
+                        if (platformSR.color == Color.white || platformSR.color != Color.green)
+                        {
+                            colored = false;
+                            return colored;
+                        }
+                        else if (platformSR.color == Color.green)
+                        {
+                            colored = true;
+                        }
                     }
                 }
                 break;
