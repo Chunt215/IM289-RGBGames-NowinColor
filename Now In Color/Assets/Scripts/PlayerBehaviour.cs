@@ -118,14 +118,15 @@ public class PlayerBehaviour : MonoBehaviour
         RaycastHit2D hit = Physics2D.Linecast(rb2d.position, rb2d.position + Vector2.down, mask);
 
         // If the player has hit the ground, set jumping to false
-        if (hit.transform != null)
-        {
-            anim.SetBool("jumping", false);
-        }
-        else
-        {
-            anim.SetBool("jumping", true);
-        }
+        //if (hit.transform != null)
+        //{
+        //    anim.SetBool("jumping", false);
+        //}
+        //else
+        //{
+        //    anim.SetBool("jumping", true);
+        //}
+        anim.SetBool("jumping", !canJump);
     }
 
     void Shrinking()
