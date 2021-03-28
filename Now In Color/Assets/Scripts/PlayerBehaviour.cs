@@ -12,6 +12,8 @@ public class PlayerBehaviour : MonoBehaviour
     public float speed = 5.0f;
     public float jumpForce = 100;
 
+    public Collider2D standingCollider;
+
     static public int lives = 3;
     public LayerMask mask;
     public Text livesText;
@@ -32,6 +34,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     private bool canJump = true;
     public bool canShoot = true;
+    private bool canCrouch = false;
 
     private Animator anim;
 
@@ -133,11 +136,22 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.C))
         {
+            canCrouch = true;
             anim.SetBool("canCrouch", true);
         }
         else
         {
             anim.SetBool("canCrouch", false);
+            canCrouch = false;
+        }
+
+        if(canCrouch == true)
+        {
+            standingCollider.enabled = false;
+        }
+        else
+        {
+            standingCollider.enabled = true;
         }
     }
 
