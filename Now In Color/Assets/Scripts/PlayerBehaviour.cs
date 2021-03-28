@@ -63,6 +63,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         Movement();
         Jumping();
+        Shrinking();
 
         if(transform.position.y < -9)
         {
@@ -124,6 +125,18 @@ public class PlayerBehaviour : MonoBehaviour
         else
         {
             anim.SetBool("jumping", true);
+        }
+    }
+
+    void Shrinking()
+    {
+        if (Input.GetKey(KeyCode.C))
+        {
+            anim.SetBool("canShrink", true);
+        }
+        else
+        {
+            anim.SetBool("canShrink", false);
         }
     }
 
