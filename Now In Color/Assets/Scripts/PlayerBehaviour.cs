@@ -13,6 +13,7 @@ public class PlayerBehaviour : MonoBehaviour
     public float jumpForce = 100;
 
     public Collider2D standingCollider;
+    public Collider2D crouchingCollider;
 
     static public int lives = 3;
     public LayerMask mask;
@@ -49,7 +50,10 @@ public class PlayerBehaviour : MonoBehaviour
     {
         rb2d = this.gameObject.GetComponent<Rigidbody2D>();
         sr = this.gameObject.GetComponent<SpriteRenderer>();
+        standingCollider = this.gameObject.GetComponent<PolygonCollider2D>();
+        crouchingCollider = this.gameObject.GetComponent<CapsuleCollider2D>();
 
+        crouchingCollider.enabled = false;
         anim = GetComponent<Animator>();
         purple = new Color(0.5f, 0, 1);
         orange = new Color(1, 0.5f, 0);
@@ -148,10 +152,12 @@ public class PlayerBehaviour : MonoBehaviour
         if(canCrouch == true)
         {
             standingCollider.enabled = false;
+            crouchingCollider.enabled = true;
         }
         else
         {
             standingCollider.enabled = true;
+            crouchingCollider.enabled = false;
         }
     }
 
@@ -217,7 +223,7 @@ public class PlayerBehaviour : MonoBehaviour
                     jumpForce = 300;
                     break;
                 case "Yellow":
-                     sr.color = Color.yellow;
+                    sr.color = Color.yellow;
                     canKill = false;
                     speed = 5.0f;
                     jumpForce = 300;
