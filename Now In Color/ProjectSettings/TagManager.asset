@@ -23,6 +23,7 @@ TagManager:
   - Quit
   - Play Again
   - Color Enemy
+  - Hazard
   layers:
   - Default
   - TransparentFX

@@ -164,7 +164,8 @@ public class PlayerBehaviour : MonoBehaviour
             Physics2D.IgnoreLayerCollision(3, 8);
         }
 
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") ||
+            collision.gameObject.CompareTag("Hazard"))
         {
             LifeLost();
         }
