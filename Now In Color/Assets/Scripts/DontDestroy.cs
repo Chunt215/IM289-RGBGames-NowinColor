@@ -3,29 +3,36 @@ using UnityEngine.SceneManagement;
 
 public class DontDestroy : MonoBehaviour
 {
-    private Scene scene;
+    /*private Scene scene;
 
     private GameObject playerObj;
-    private GameObject playerUI;
+    private GameObject playerUI;*/
 
     void Start()
     {
-        scene = SceneManager.GetActiveScene();
+       /* scene = SceneManager.GetActiveScene();
 
         playerObj = GameObject.Find("Player");
-        playerUI = GameObject.Find("PlayerUI");
+        playerUI = GameObject.Find("PlayerUI");*/
     }
 
     private void Awake()
     {
-        if (scene.name == "Start Screen")
+        /* if (scene.name == "Start Screen")
+         {
+             Destroy(playerObj);
+             Destroy(playerUI);
+         }
+         else
+         {
+
+         }*/
+
+        DontDestroyOnLoad(this.gameObject);
+
+        if (FindObjectsOfType<DontDestroy>().Length > 2)
         {
-            Destroy(playerObj);
-            Destroy(playerUI);
-        }
-        else
-        {
-            DontDestroyOnLoad(this.gameObject);
+            Destroy(gameObject);
         }
     }
 }

@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 8057290573658713361}
   - component: {fileID: 3431482897617185698}
   - component: {fileID: 2836399601374428580}
-  - component: {fileID: 7025688984283069536}
+  - component: {fileID: -6151766299881755903}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -251,6 +251,7 @@ MonoBehaviour:
   speed: 5
   jumpForce: 300
   standingCollider: {fileID: 0}
+  crouchingCollider: {fileID: 0}
   mask:
     serializedVersion: 2
     m_Bits: 64
@@ -266,7 +267,7 @@ MonoBehaviour:
   bulletLife: 3
   sr: {fileID: 0}
   canShoot: 1
---- !u!114 &7025688984283069536
+--- !u!114 &-6151766299881755903
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
