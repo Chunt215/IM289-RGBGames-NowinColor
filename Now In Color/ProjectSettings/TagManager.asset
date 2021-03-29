@@ -24,6 +24,7 @@ TagManager:
   - Play Again
   - Color Enemy
   - Hazard
+  - PlayerUI
   layers:
   - Default
   - TransparentFX
