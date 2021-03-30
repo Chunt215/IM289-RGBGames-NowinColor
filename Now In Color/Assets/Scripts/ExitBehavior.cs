@@ -51,9 +51,11 @@ public class ExitBehavior : MonoBehaviour
                     break;
                 case "Level 5":
                     SceneManager.LoadScene("Level 6");
+                    playerObj.transform.position = new Vector3(-15.82f, -6.891f, -8.42f);
                     break;
                 case "Level 6":
                     SceneManager.LoadScene("Boss Battle");
+                    playerObj.transform.position = new Vector3(-23.9f, -8.431f, -8.42f);
                     break;
                 case "Boss Battle":
                     SceneManager.LoadScene("End Game");

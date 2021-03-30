@@ -129,6 +129,51 @@ public class GameController : MonoBehaviour
                     }
                 }
                 break;
+            case "Level 5":
+                for (int i = 0; i < platforms.Count; i++)
+                {
+                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                    if (platformSR.color == Color.white)
+                    {
+                        colored = false;
+                        return colored;
+                    }
+                    else
+                    {
+                        colored = true;
+                    }
+                }
+                break;
+            case "Level 6":
+                for (int i = 0; i < platforms.Count; i++)
+                {
+                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                    if (platformSR.color == Color.white)
+                    {
+                        colored = false;
+                        return colored;
+                    }
+                    else
+                    {
+                        colored = true;
+                    }
+                }
+                break;
+            case "Boss Battle":
+                    for (int i = 0; i < platforms.Count; i++)
+                {
+                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                    if (platformSR.color == Color.white)
+                    {
+                        colored = false;
+                        return colored;
+                    }
+                    else
+                    {
+                        colored = true;
+                    }
+                }
+                break;
         }
 
         return colored;
