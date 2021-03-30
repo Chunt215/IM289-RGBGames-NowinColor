@@ -73,31 +73,44 @@ public class GameController : MonoBehaviour
                 for (int i = 0; i < platforms.Count; i++)
                 {
                     SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
-                    if(i >= 0 && i < 15)
+                    if (platformSR.color == Color.white)
                     {
-                        if (platformSR.color == Color.white || platformSR.color != Color.yellow)
-                        {
-                            colored = false;
-                            return colored;
-                        }
-                        else if(platformSR.color == Color.yellow)
-                        {
-                            colored = true;
-                        }
+                        colored = false;
+                        return colored;
                     }
-                    else if (i >= 15)
+                    else
                     {
-                        if (platformSR.color == Color.white || platformSR.color != Color.green)
-                        {
-                            colored = false;
-                            return colored;
-                        }
-                        else if (platformSR.color == Color.green)
-                        {
-                            colored = true;
-                        }
+                        colored = true;
                     }
                 }
+                /* for (int i = 0; i < platforms.Count; i++)
+                 {
+                     SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                     if(i >= 0 && i < 15)
+                     {
+                         if (platformSR.color == Color.white || platformSR.color != Color.yellow)
+                         {
+                             colored = false;
+                             return colored;
+                         }
+                         else if(platformSR.color == Color.yellow)
+                         {
+                             colored = true;
+                         }
+                     }
+                     else if (i >= 15)
+                     {
+                         if (platformSR.color == Color.white || platformSR.color != Color.green)
+                         {
+                             colored = false;
+                             return colored;
+                         }
+                         else if (platformSR.color == Color.green)
+                         {
+                             colored = true;
+                         }
+                     }
+                 }*/
                 break;
             case "Level 3":
                 for (int i = 0; i < platforms.Count; i++)
