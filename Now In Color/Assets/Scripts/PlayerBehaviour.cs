@@ -15,7 +15,7 @@ public class PlayerBehaviour : MonoBehaviour
     public Collider2D standingCollider;
     public Collider2D crouchingCollider;
 
-    static public int lives = 10;
+    static public int lives = 3;
     public LayerMask mask;
     public Text livesText;
     public int damage = 1;
