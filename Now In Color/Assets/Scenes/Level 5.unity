@@ -1930,6 +1930,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platforms: []
   canExit: 0
+  player: {fileID: 0}
+  playerCanvas: {fileID: 0}
+  playerPos: {x: -7.4, y: -2.4, z: -8.42}
+  canvasPos: {x: 1280, y: 720, z: 0}
 --- !u!4 &828638292
 Transform:
   m_ObjectHideFlags: 0
@@ -2765,11 +2769,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7433218800726346289, guid: 04f3102d3d0beb24d954d86bc2f3fd0a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.7327523
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7433218800726346289, guid: 04f3102d3d0beb24d954d86bc2f3fd0a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.2
+      value: 5.26
       objectReference: {fileID: 0}
     - target: {fileID: 7433218800726346289, guid: 04f3102d3d0beb24d954d86bc2f3fd0a, type: 3}
       propertyPath: m_LocalPosition.z

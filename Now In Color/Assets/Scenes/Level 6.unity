@@ -844,6 +844,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platforms: []
   canExit: 0
+  player: {fileID: 0}
+  playerCanvas: {fileID: 0}
+  playerPos: {x: -7.4, y: -2.4, z: -8.42}
+  canvasPos: {x: 1280, y: 720, z: 0}
 --- !u!4 &364686396
 Transform:
   m_ObjectHideFlags: 0
@@ -1666,7 +1670,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &765303336
 PrefabInstance:
@@ -2203,7 +2207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightLimit: 13
   leftLimit: -17
-  speed: 4
+  speed: 2.5
   isVert: 0
 --- !u!4 &1128597258 stripped
 Transform:
@@ -2298,7 +2302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6814092698732001085, guid: f683f91ed9cc77742b925dbcb490bf8c, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6814092698732001085, guid: f683f91ed9cc77742b925dbcb490bf8c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2395,7 +2399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightLimit: 12
   leftLimit: -18
-  speed: 4
+  speed: 2.5
   isVert: 0
 --- !u!4 &1281450310 stripped
 Transform:
@@ -2985,7 +2989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightLimit: 15
   leftLimit: -15
-  speed: 4
+  speed: 2.5
   isVert: 0
 --- !u!4 &1884576807 stripped
 Transform:
@@ -3138,7 +3142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightLimit: 14
   leftLimit: -16
-  speed: 4
+  speed: 2.5
   isVert: 0
 --- !u!4 &2036477828 stripped
 Transform:
