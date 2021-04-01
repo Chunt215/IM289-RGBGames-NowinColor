@@ -52,6 +52,8 @@ public class PlayerBehaviour : MonoBehaviour
         sr = this.gameObject.GetComponent<SpriteRenderer>();
         standingCollider = this.gameObject.GetComponent<PolygonCollider2D>();
         crouchingCollider = this.gameObject.GetComponent<CapsuleCollider2D>();
+        livesText = GameObject.Find("Lives").GetComponent<Text>();
+        coinText = GameObject.Find("CoinText").GetComponent<Text>();
 
         crouchingCollider.enabled = false;
         anim = GetComponent<Animator>();

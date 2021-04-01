@@ -15,7 +15,7 @@ public class ExitBehavior : MonoBehaviour
     {
         gc = gcObject.GetComponent<GameController>();
         sceneName = SceneManager.GetActiveScene().name;
-        playerObj = GameObject.Find("Player");
+        playerObj = GameObject.Find("Player(Clone)");
         player = playerObj.GetComponent<PlayerBehaviour>();
     }
 

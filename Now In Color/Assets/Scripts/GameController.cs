@@ -9,6 +9,10 @@ public class GameController : MonoBehaviour
 {
     public List<GameObject> platforms;
     public bool canExit = false;
+    public GameObject player;
+    public GameObject playerCanvas;
+    public Vector3 playerPos = new Vector3(-7.4f, -2.4f, -8.42f);
+    public Vector3 canvasPos = new Vector3(1280, 720, 0);
     private string sceneName;
 
     // Start is called before the first frame update
@@ -16,6 +20,16 @@ public class GameController : MonoBehaviour
     {
         platforms = new List<GameObject>(GameObject.FindGameObjectsWithTag("Platform"));
         sceneName = SceneManager.GetActiveScene().name;
+        if(sceneName == "Level 0")
+        {
+            Instantiate(player, playerPos, Quaternion.identity);
+            Instantiate(playerCanvas, canvasPos, Quaternion.identity);
+        }
+        else if(sceneName == "Start Screen" || sceneName == "End Game" || sceneName == "Game Over")
+        {
+            Destroy(GameObject.Find("Player(Clone)"));
+            Destroy(GameObject.Find("PlayerCanvas(Clone)"));
+        }
     }
 
     // Update is called once per frame
@@ -70,47 +84,47 @@ public class GameController : MonoBehaviour
                 }
                 break;
             case "Level 2":
+                //for (int i = 0; i < platforms.Count; i++)
+                //{
+                //    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                //    if (platformSR.color == Color.white)
+                //    {
+                //        colored = false;
+                //        return colored;
+                //    }
+                //    else
+                //    {
+                //        colored = true;
+                //    }
+                //}
                 for (int i = 0; i < platforms.Count; i++)
                 {
                     SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
-                    if (platformSR.color == Color.white)
+                    if (i >= 0 && i < 15)
                     {
-                        colored = false;
-                        return colored;
+                        if (platformSR.color == Color.white || platformSR.color != Color.yellow)
+                        {
+                            colored = false;
+                            return colored;
+                        }
+                        else if (platformSR.color == Color.yellow)
+                        {
+                            colored = true;
+                        }
                     }
-                    else
+                    else if (i >= 15)
                     {
-                        colored = true;
+                        if (platformSR.color == Color.white || platformSR.color != Color.green)
+                        {
+                            colored = false;
+                            return colored;
+                        }
+                        else if (platformSR.color == Color.green)
+                        {
+                            colored = true;
+                        }
                     }
                 }
-                /* for (int i = 0; i < platforms.Count; i++)
-                 {
-                     SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
-                     if(i >= 0 && i < 15)
-                     {
-                         if (platformSR.color == Color.white || platformSR.color != Color.yellow)
-                         {
-                             colored = false;
-                             return colored;
-                         }
-                         else if(platformSR.color == Color.yellow)
-                         {
-                             colored = true;
-                         }
-                     }
-                     else if (i >= 15)
-                     {
-                         if (platformSR.color == Color.white || platformSR.color != Color.green)
-                         {
-                             colored = false;
-                             return colored;
-                         }
-                         else if (platformSR.color == Color.green)
-                         {
-                             colored = true;
-                         }
-                     }
-                 }*/
                 break;
             case "Level 3":
                 for (int i = 0; i < platforms.Count; i++)

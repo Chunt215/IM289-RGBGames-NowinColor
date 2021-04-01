@@ -8,7 +8,7 @@ public class CameraBehavior : MonoBehaviour
 
     void Start()
     {
-        playerObj = GameObject.Find("Player");
+        playerObj = GameObject.Find("Player(Clone)");
         target = playerObj.GetComponent<Transform>();
     }
 
