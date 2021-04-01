@@ -84,20 +84,20 @@ public class GameController : MonoBehaviour
                 }
                 break;
             case "Level 2":
-                //for (int i = 0; i < platforms.Count; i++)
-                //{
-                //    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
-                //    if (platformSR.color == Color.white)
-                //    {
-                //        colored = false;
-                //        return colored;
-                //    }
-                //    else
-                //    {
-                //        colored = true;
-                //    }
-                //}
                 for (int i = 0; i < platforms.Count; i++)
+                {
+                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                    if (platformSR.color == Color.white)
+                    {
+                        colored = false;
+                        return colored;
+                    }
+                    else
+                    {
+                        colored = true;
+                    }
+                }
+                /*for (int i = 0; i < platforms.Count; i++)
                 {
                     SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
                     if (i >= 0 && i < 15)
@@ -124,7 +124,7 @@ public class GameController : MonoBehaviour
                             colored = true;
                         }
                     }
-                }
+                }*/
                 break;
             case "Level 3":
                 for (int i = 0; i < platforms.Count; i++)
