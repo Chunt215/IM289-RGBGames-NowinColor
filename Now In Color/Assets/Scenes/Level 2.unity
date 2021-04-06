@@ -643,8 +643,12 @@ PrefabInstance:
       value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 6076553517571110489, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7071
+      objectReference: {fileID: 0}
+    - target: {fileID: 6076553517571110489, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.24
+      value: 7.9061
       objectReference: {fileID: 0}
     - target: {fileID: 6076553517571110489, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1286,8 +1290,12 @@ PrefabInstance:
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6076553517571110489, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.874
+      objectReference: {fileID: 0}
+    - target: {fileID: 6076553517571110489, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.74
+      value: 9.8836
       objectReference: {fileID: 0}
     - target: {fileID: 6076553517571110489, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4415,6 +4423,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platforms: []
   canExit: 0
+  player: {fileID: 0}
+  playerCanvas: {fileID: 0}
+  playerPos: {x: -7.4, y: -2.4, z: -8.42}
+  canvasPos: {x: 1280, y: 720, z: 0}
 --- !u!4 &2027629752
 Transform:
   m_ObjectHideFlags: 0
