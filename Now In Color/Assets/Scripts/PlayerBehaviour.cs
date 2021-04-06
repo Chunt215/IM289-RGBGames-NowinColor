@@ -65,6 +65,8 @@ public class PlayerBehaviour : MonoBehaviour
         secondaries.Add(orange);
         secondaries.Add(purple);
         secondaries.Add(Color.green);
+
+        lives = 3;
     }
 
     // Update is called once per frame
