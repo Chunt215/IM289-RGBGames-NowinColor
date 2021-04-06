@@ -68,6 +68,8 @@ public class PlayerBehaviour : MonoBehaviour
 
         lives = 3;
         livesText.text = lives.ToString();
+        coins = 0;
+        coinText.text = coins.ToString();
     }
 
     // Update is called once per frame
