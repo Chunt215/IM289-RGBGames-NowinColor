@@ -562,17 +562,16 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: 2D_BuiltInRenderer
-  metroPackageVersion: 
-  metroCertificatePath: C:\Users\13098\OneDrive\Desktop\IM289-RGBGames-NowinColor\Now
-    In Color\Assets\WSATestCertificate.pfx
+  metroPackageName: 2DBuiltInRenderer
+  metroPackageVersion: 1.0.0.0
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
   metroCertificateNotAfter: 8037081e0746d801
   metroApplicationDescription: 2D_BuiltInRenderer
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Now In Color
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

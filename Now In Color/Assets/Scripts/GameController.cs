@@ -84,47 +84,41 @@ public class GameController : MonoBehaviour
                 }
                 break;
             case "Level 2":
+                //for (int i = 0; i < platforms.Count; i++)
+                //{
+                //    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                //    if (platformSR.color == Color.white)
+                //    {
+                //        colored = false;
+                //        return colored;
+                //    }
+                //    else
+                //    {
+                //        colored = true;
+                //    }
+                //}
                 for (int i = 0; i < platforms.Count; i++)
                 {
                     SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
-                    if (platformSR.color == Color.white)
+                    if (i < 15)
                     {
-                        colored = false;
-                        return colored;
+                        if (platformSR.color != Color.yellow)
+                        {
+                            colored = false;
+                            return colored;
+                        }
+                            colored = true;
                     }
                     else
                     {
+                        if (platformSR.color != Color.green)
+                        {
+                            colored = false;
+                            return colored;
+                        }
                         colored = true;
                     }
                 }
-                /*for (int i = 0; i < platforms.Count; i++)
-                {
-                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
-                    if (i >= 0 && i < 15)
-                    {
-                        if (platformSR.color == Color.white || platformSR.color != Color.yellow)
-                        {
-                            colored = false;
-                            return colored;
-                        }
-                        else if (platformSR.color == Color.yellow)
-                        {
-                            colored = true;
-                        }
-                    }
-                    else if (i >= 15)
-                    {
-                        if (platformSR.color == Color.white || platformSR.color != Color.green)
-                        {
-                            colored = false;
-                            return colored;
-                        }
-                        else if (platformSR.color == Color.green)
-                        {
-                            colored = true;
-                        }
-                    }
-                }*/
                 break;
             case "Level 3":
                 for (int i = 0; i < platforms.Count; i++)
@@ -187,7 +181,7 @@ public class GameController : MonoBehaviour
                 }
                 break;
             case "Boss Battle":
-                    for (int i = 0; i < platforms.Count; i++)
+                for (int i = 0; i < platforms.Count; i++)
                 {
                     SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
                     if (platformSR.color == Color.white)

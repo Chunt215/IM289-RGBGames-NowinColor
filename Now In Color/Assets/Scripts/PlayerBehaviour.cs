@@ -45,11 +45,15 @@ public class PlayerBehaviour : MonoBehaviour
     private List<Color> primaries = new List<Color>();
     private List<Color> secondaries = new List<Color>();
 
+    void Awake()
+    {
+        sr = this.gameObject.GetComponent<SpriteRenderer>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         rb2d = this.gameObject.GetComponent<Rigidbody2D>();
-        sr = this.gameObject.GetComponent<SpriteRenderer>();
         standingCollider = this.gameObject.GetComponent<PolygonCollider2D>();
         crouchingCollider = this.gameObject.GetComponent<CapsuleCollider2D>();
         livesText = GameObject.Find("Lives").GetComponent<Text>();
