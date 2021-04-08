@@ -118,13 +118,10 @@ public class GameController : MonoBehaviour
                     //    }
                     //    colored = true;
                     //}
-                    if(platforms[i].GetComponent<PlatformBehaviour>().correctColor == true)
+                    colored = platforms[i].GetComponent<PlatformBehaviour>().correctColor;
+
+                    if (colored == false)
                     {
-                        colored = true;
-                    }
-                    else
-                    {
-                        colored = false;
                         return colored;
                     }
                 }
