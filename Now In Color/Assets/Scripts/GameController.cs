@@ -99,24 +99,33 @@ public class GameController : MonoBehaviour
                 //}
                 for (int i = 0; i < platforms.Count; i++)
                 {
-                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
-                    if (i < 15)
+                    //SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                    //if (i < 15)
+                    //{
+                    //    if (platformSR.color != Color.yellow)
+                    //    {
+                    //        colored = false;
+                    //        return colored;
+                    //    }
+                    //        colored = true;
+                    //}
+                    //else
+                    //{
+                    //    if (platformSR.color != Color.green)
+                    //    {
+                    //        colored = false;
+                    //        return colored;
+                    //    }
+                    //    colored = true;
+                    //}
+                    if(platforms[i].GetComponent<PlatformBehaviour>().correctColor == true)
                     {
-                        if (platformSR.color != Color.yellow)
-                        {
-                            colored = false;
-                            return colored;
-                        }
-                            colored = true;
+                        colored = true;
                     }
                     else
                     {
-                        if (platformSR.color != Color.green)
-                        {
-                            colored = false;
-                            return colored;
-                        }
-                        colored = true;
+                        colored = false;
+                        return colored;
                     }
                 }
                 break;
