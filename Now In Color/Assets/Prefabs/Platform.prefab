@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6076553517571110489}
   - component: {fileID: 2573398348473759485}
   - component: {fileID: -3701513697208015898}
+  - component: {fileID: -4841701173748522670}
   m_Layer: 6
   m_Name: Platform
   m_TagString: Platform
@@ -109,3 +110,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1048837, y: 0.38320053}
   m_EdgeRadius: 0
+--- !u!114 &-4841701173748522670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2330121800598102985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4eedca999b4a2945932a007cf179997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goalColor: {r: 0, g: 0, b: 0, a: 0}
+  correctColor: 0
