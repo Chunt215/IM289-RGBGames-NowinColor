@@ -208,7 +208,14 @@ public class PlayerBehaviour : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-        if(collision.gameObject.CompareTag("Color Enemy"))
+        if (collision.gameObject.CompareTag("Life"))
+        {
+            lives++;
+            livesText.text = lives.ToString();
+            Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("Color Enemy"))
         {
             sr.color = Color.white;
         }

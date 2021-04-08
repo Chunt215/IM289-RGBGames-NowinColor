@@ -25,6 +25,8 @@ TagManager:
   - Color Enemy
   - Hazard
   - PlayerUI
+  - Lives
+  - Life
   layers:
   - Default
   - TransparentFX
