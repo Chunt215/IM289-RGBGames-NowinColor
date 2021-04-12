@@ -6,15 +6,18 @@ public class BossBehavior : MonoBehaviour
 {
     public float speed = 3f;
     public Rigidbody2D rb2d;
+    public Sprite[] bossVariants;
 
     private bool faceLeft = true;
     private bool faceRight = false;
-    private int health = 8;
+    private int health = 9;
+    private SpriteRenderer sr;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2d = this.gameObject.GetComponent<Rigidbody2D>();
+        sr = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
     void FixedUpdate()
@@ -62,6 +65,42 @@ public class BossBehavior : MonoBehaviour
             faceLeft = true;
             faceRight = false;
             Switch();
+        }
+
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            health--;
+            switch (health)
+            {
+                case 8:
+                    sr.sprite = bossVariants[1];
+                    break;
+                case 7:
+                    sr.sprite = bossVariants[2];
+                    break;
+                case 6:
+                    sr.sprite = bossVariants[3];
+                    break;
+                case 5:
+                    sr.sprite = bossVariants[4];
+                    break;
+                case 4:
+                    sr.sprite = bossVariants[5];
+                    break;
+                case 3:
+                    sr.sprite = bossVariants[6];
+                    break;
+                case 2:
+                    sr.sprite = bossVariants[7];
+                    break;
+                case 1:
+                    sr.sprite = bossVariants[8];
+                    break;
+                case 0:
+                    Destroy(this.gameObject);
+                    break;
+            }
+            Destroy(collision.gameObject);
         }
     }
 }

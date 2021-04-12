@@ -83,10 +83,10 @@ public class PlayerBehaviour : MonoBehaviour
         Jumping();
         Crouching();
 
-        if(transform.position.y < -9)
+/*        if(transform.position.y < -9)
         {
             LifeLost();
-        }
+        }*/
 
         if (lives == 0)
         {
@@ -219,6 +219,13 @@ public class PlayerBehaviour : MonoBehaviour
         {
             sr.color = Color.white;
         }
+
+        if (collision.gameObject.CompareTag("FellOff"))
+        {
+            LifeLost();
+        }
+
+
     }
 
     void OnTriggerEnter2D(Collider2D collider)
