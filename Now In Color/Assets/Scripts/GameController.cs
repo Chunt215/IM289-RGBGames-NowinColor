@@ -129,45 +129,63 @@ public class GameController : MonoBehaviour
             case "Level 3":
                 for (int i = 0; i < platforms.Count; i++)
                 {
-                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
-                    if (platformSR.color == Color.white)
+                    //SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                    //if (platformSR.color == Color.white)
+                    //{
+                    //    colored = false;
+                    //    return colored;
+                    //}
+                    //else
+                    //{
+                    //    colored = true;
+                    //}
+                    colored = platforms[i].GetComponent<PlatformBehaviour>().correctColor;
+
+                    if (colored == false)
                     {
-                        colored = false;
                         return colored;
-                    }
-                    else
-                    {
-                        colored = true;
                     }
                 }
                 break;
             case "Level 4":
                 for (int i = 0; i < platforms.Count; i++)
                 {
-                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
-                    if (platformSR.color == Color.white)
+                    //SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                    //if (platformSR.color == Color.white)
+                    //{
+                    //    colored = false;
+                    //    return colored;
+                    //}
+                    //else
+                    //{
+                    //    colored = true;
+                    //}
+                    colored = platforms[i].GetComponent<PlatformBehaviour>().correctColor;
+
+                    if (colored == false)
                     {
-                        colored = false;
                         return colored;
-                    }
-                    else
-                    {
-                        colored = true;
                     }
                 }
                 break;
             case "Level 5":
                 for (int i = 0; i < platforms.Count; i++)
                 {
-                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
-                    if (platformSR.color == Color.white)
+                    //SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                    //if (platformSR.color == Color.white)
+                    //{
+                    //    colored = false;
+                    //    return colored;
+                    //}
+                    //else
+                    //{
+                    //    colored = true;
+                    //}
+                    colored = platforms[i].GetComponent<PlatformBehaviour>().correctColor;
+
+                    if (colored == false)
                     {
-                        colored = false;
                         return colored;
-                    }
-                    else
-                    {
-                        colored = true;
                     }
                 }
                 break;
