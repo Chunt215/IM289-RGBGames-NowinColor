@@ -22,7 +22,6 @@ public class CameraBehavior : MonoBehaviour
         // Move the camera to the target position at a set speed
         Vector3 camPos = Vector3.MoveTowards(transform.position, targetPosition
                                              , cameraSpeed);
-
         transform.position = camPos;
     }
 }
