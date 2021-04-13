@@ -192,31 +192,41 @@ public class GameController : MonoBehaviour
             case "Level 6":
                 for (int i = 0; i < platforms.Count; i++)
                 {
-                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
-                    if (platformSR.color == Color.white)
+                    //SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                    //if (platformSR.color == Color.white)
+                    //{
+                    //    colored = false;
+                    //    return colored;
+                    //}
+                    //else
+                    //{
+                    //    colored = true;
+                    //}
+                    colored = platforms[i].GetComponent<PlatformBehaviour>().correctColor;
+
+                    if (colored == false)
                     {
-                        colored = false;
                         return colored;
-                    }
-                    else
-                    {
-                        colored = true;
                     }
                 }
                 break;
             case "Boss Battle":
-                for (int i = 0; i < platforms.Count; i++)
+                //for (int i = 0; i < platforms.Count; i++)
+                //{
+                //    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
+                //    if (platformSR.color == Color.white)
+                //    {
+                //        colored = false;
+                //        return colored;
+                //    }
+                //    else
+                //    {
+                //        colored = true;
+                //    }
+                //}
+                if(GameObject.Find("Boss") == null)
                 {
-                    SpriteRenderer platformSR = platforms[i].GetComponent<SpriteRenderer>();
-                    if (platformSR.color == Color.white)
-                    {
-                        colored = false;
-                        return colored;
-                    }
-                    else
-                    {
-                        colored = true;
-                    }
+                    return true;
                 }
                 break;
         }
