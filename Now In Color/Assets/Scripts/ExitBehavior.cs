@@ -35,7 +35,7 @@ public class ExitBehavior : MonoBehaviour
                     break;
                 case "Level 1":
                     SceneManager.LoadScene("Level 2");
-                    playerObj.transform.position = new Vector3(-11.5f, 0.1f, -8.42f);
+                    playerObj.transform.position = new Vector3(-12.08f, -12.38f, -8.42f);
                     break;
                 case "Level 2":
                     SceneManager.LoadScene("Level 3");
