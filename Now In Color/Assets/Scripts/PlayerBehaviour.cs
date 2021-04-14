@@ -15,7 +15,7 @@ public class PlayerBehaviour : MonoBehaviour
     public Collider2D standingCollider;
     public Collider2D crouchingCollider;
 
-    static public int lives = 3;
+    public int lives = 3;
     public LayerMask mask;
     public Text livesText;
     public int damage = 1;
@@ -88,7 +88,7 @@ public class PlayerBehaviour : MonoBehaviour
             LifeLost();
         }*/
 
-        if (lives == 0)
+        if (lives <= 0)
         {
             lives = 3;
             Destroy(gameObject);
@@ -352,6 +352,7 @@ public class PlayerBehaviour : MonoBehaviour
         lives -= damage;
         ChangeHealth();
         transform.position = checkpointPos;
+        sr.color = Color.white;
     }
 
     void Shooting()
