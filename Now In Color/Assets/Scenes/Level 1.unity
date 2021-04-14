@@ -5326,11 +5326,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6814092698732001085, guid: f683f91ed9cc77742b925dbcb490bf8c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.88
+      value: -10.52
       objectReference: {fileID: 0}
     - target: {fileID: 6814092698732001085, guid: f683f91ed9cc77742b925dbcb490bf8c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.78
+      value: -3.04
       objectReference: {fileID: 0}
     - target: {fileID: 6814092698732001085, guid: f683f91ed9cc77742b925dbcb490bf8c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5383,9 +5383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fd89af4882c9bb46b8303afb43064af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkpoints:
-  - {fileID: 21300000, guid: 4de79ae1222ff6c4eae99ef3d18a5505, type: 3}
-  - {fileID: 21300000, guid: bee54a9f0d404be4088b427f5a09b669, type: 3}
+  coloredVersion: {fileID: 0}
 --- !u!1 &2039574071
 GameObject:
   m_ObjectHideFlags: 0
