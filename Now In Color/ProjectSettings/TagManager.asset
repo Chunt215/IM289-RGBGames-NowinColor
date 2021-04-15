@@ -29,6 +29,7 @@ TagManager:
   - Life
   - BossWall
   - FellOff
+  - BGM
   layers:
   - Default
   - TransparentFX
