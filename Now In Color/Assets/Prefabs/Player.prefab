@@ -252,15 +252,12 @@ MonoBehaviour:
   jumpForce: 300
   standingCollider: {fileID: 0}
   crouchingCollider: {fileID: 0}
-<<<<<<< HEAD
   jumpSound: {fileID: 8300000, guid: 5537963c3b04bec47a987e8a007fd67e, type: 3}
   dieSound: {fileID: 8300000, guid: a11e3d17ef41d3549bd46814e9a44c87, type: 3}
   shootSound: {fileID: 8300000, guid: 7bf15ee033cd8a94fae78c8229b0a5bf, type: 3}
   checkpointSound: {fileID: 8300000, guid: bcd982a96995e9644a20c42f483dad15, type: 3}
   coinSound: {fileID: 8300000, guid: ca6e9f936675a274789ab57d6ada243e, type: 3}
   lives: 3
-=======
->>>>>>> parent of 25b118a (pt 1 push of level design and sound)
   mask:
     serializedVersion: 2
     m_Bits: 64
