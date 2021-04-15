@@ -67,10 +67,6 @@ public class GameController : MonoBehaviour
                     else
                     {
                         colored = true;
-
-                        Vector3 camPos = Camera.main.transform.position;
-
-                        AudioSource.PlayClipAtPoint(exitSound, camPos);
                     }
                 }
                 break;
