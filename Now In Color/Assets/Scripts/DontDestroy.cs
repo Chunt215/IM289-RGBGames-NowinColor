@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class DontDestroy : MonoBehaviour
 {
-
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);

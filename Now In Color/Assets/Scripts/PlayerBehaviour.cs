@@ -15,14 +15,6 @@ public class PlayerBehaviour : MonoBehaviour
     public Collider2D standingCollider;
     public Collider2D crouchingCollider;
 
-    public AudioClip jumpSound;
-    public AudioClip dieSound;
-    public AudioClip shootSound;
-    public AudioClip checkpointSound;
-    public AudioClip zapSound;
-    public AudioClip coinSound;
-    public AudioClip lifeSound;
-
     public int lives = 3;
     public LayerMask mask;
     public Text livesText;
@@ -137,10 +129,6 @@ public class PlayerBehaviour : MonoBehaviour
         {
             rb2d.AddForce(Vector2.up * jumpForce);
             canJump = false;
-
-            Vector3 camPos = Camera.main.transform.position;
-
-            AudioSource.PlayClipAtPoint(jumpSound, camPos);
         }
 
         // Check to see what layer has hit and collect that information
@@ -272,10 +260,6 @@ public class PlayerBehaviour : MonoBehaviour
             if (collider.CompareTag("Checkpoint"))
             {
                 checkpointPos = collider.transform.position;
-
-                Vector3 camPos = Camera.main.transform.position;
-
-                AudioSource.PlayClipAtPoint(checkpointSound, camPos);
             }
         }
         else if (CheckMixable())
@@ -369,10 +353,6 @@ public class PlayerBehaviour : MonoBehaviour
         ChangeHealth();
         transform.position = checkpointPos;
         sr.color = Color.white;
-
-        Vector3 camPos = Camera.main.transform.position;
-
-        AudioSource.PlayClipAtPoint(dieSound, camPos);
     }
 
     void Shooting()
@@ -403,9 +383,6 @@ public class PlayerBehaviour : MonoBehaviour
                 Destroy(bullet, bulletLife);
             }
 
-            Vector3 camPos = Camera.main.transform.position;
-
-            AudioSource.PlayClipAtPoint(shootSound, camPos);
         }
     }
 }
