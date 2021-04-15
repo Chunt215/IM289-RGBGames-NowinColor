@@ -2247,6 +2247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03633fda6ac97f8488140a6c6ab5057d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  exitSound: {fileID: 0}
   platforms: []
   canExit: 0
   player: {fileID: 0}
