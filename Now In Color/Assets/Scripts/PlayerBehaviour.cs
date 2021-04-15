@@ -19,9 +19,7 @@ public class PlayerBehaviour : MonoBehaviour
     public AudioClip dieSound;
     public AudioClip shootSound;
     public AudioClip checkpointSound;
-    public AudioClip zapSound;
     public AudioClip coinSound;
-    public AudioClip lifeSound;
 
     public int lives = 3;
     public LayerMask mask;
@@ -218,6 +216,10 @@ public class PlayerBehaviour : MonoBehaviour
             coins++;
             coinText.text = coins.ToString();
             Destroy(collision.gameObject);
+
+            Vector3 camPos = Camera.main.transform.position;
+
+            AudioSource.PlayClipAtPoint(coinSound, camPos);
         }
 
         if (collision.gameObject.CompareTag("Life"))

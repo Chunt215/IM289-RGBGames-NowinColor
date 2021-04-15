@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    public AudioClip exitSound;
+
     public List<GameObject> platforms;
     public bool canExit = false;
     public GameObject player;
@@ -65,6 +67,10 @@ public class GameController : MonoBehaviour
                     else
                     {
                         colored = true;
+
+                        Vector3 camPos = Camera.main.transform.position;
+
+                        AudioSource.PlayClipAtPoint(exitSound, camPos);
                     }
                 }
                 break;

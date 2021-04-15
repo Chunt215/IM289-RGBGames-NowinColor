@@ -4660,6 +4660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03633fda6ac97f8488140a6c6ab5057d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  exitSound: {fileID: 0}
   platforms: []
   canExit: 0
   player: {fileID: 0}
@@ -7054,7 +7055,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  rb2d: {fileID: 0}
   bossVariants:
   - {fileID: 21300000, guid: 88dd545f541050c4fb429003447bfd99, type: 3}
   - {fileID: 21300000, guid: 4b65bbac4d3a7984699b1515074ada14, type: 3}
