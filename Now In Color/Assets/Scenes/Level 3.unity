@@ -219,6 +219,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 11975948}
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -293,6 +294,8 @@ PrefabInstance:
 >>>>>>> 534823100d279144da6823df1a2ed653bd4da472
 =======
 >>>>>>> parent of fba99bf (Expanded Level 3)
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
 --- !u!1001 &22485714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -363,6 +366,7 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &46556362 stripped
 =======
 --- !u!4 &63864713 stripped
@@ -371,6 +375,8 @@ Transform:
   m_PrefabInstance: {fileID: 896189824}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
 >>>>>>> parent of fba99bf (Expanded Level 3)
 --- !u!4 &46556362 stripped
@@ -663,6 +669,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -678,6 +685,9 @@ Transform:
 =======
 >>>>>>> 534823100d279144da6823df1a2ed653bd4da472
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 15
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
   m_RootOrder: 15
 >>>>>>> parent of fba99bf (Expanded Level 3)
@@ -816,6 +826,7 @@ Transform:
   m_PrefabInstance: {fileID: 152485437}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -897,6 +908,8 @@ Transform:
   m_PrefabInstance: {fileID: 190843271}
   m_PrefabAsset: {fileID: 0}
 >>>>>>> 534823100d279144da6823df1a2ed653bd4da472
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
 >>>>>>> parent of fba99bf (Expanded Level 3)
 --- !u!1001 &208546909
@@ -1038,6 +1051,7 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -1119,6 +1133,8 @@ Transform:
   m_PrefabInstance: {fileID: 358002542}
   m_PrefabAsset: {fileID: 0}
 >>>>>>> 534823100d279144da6823df1a2ed653bd4da472
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
 >>>>>>> parent of fba99bf (Expanded Level 3)
 --- !u!1 &446576617
@@ -1348,6 +1364,7 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -1429,6 +1446,8 @@ Transform:
   m_PrefabInstance: {fileID: 538703881}
   m_PrefabAsset: {fileID: 0}
 >>>>>>> 534823100d279144da6823df1a2ed653bd4da472
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
 >>>>>>> parent of fba99bf (Expanded Level 3)
 --- !u!4 &570213384 stripped
@@ -1649,6 +1668,7 @@ Transform:
   m_PrefabInstance: {fileID: 586225694}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &649933489
 =======
 --- !u!1001 &416540578
@@ -1724,6 +1744,8 @@ GameObject:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
 >>>>>>> parent of fba99bf (Expanded Level 3)
 --- !u!1001 &649933489
@@ -1978,11 +2000,15 @@ RectTransform:
 <<<<<<< Updated upstream
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 17
 =======
   m_Father: {fileID: 894202829}
   m_RootOrder: 0
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 16
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
   m_RootOrder: 16
 >>>>>>> parent of fba99bf (Expanded Level 3)
@@ -2044,6 +2070,7 @@ Transform:
   m_PrefabInstance: {fileID: 832886202}
 >>>>>>> Stashed changes
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 534823100d279144da6823df1a2ed653bd4da472
 --- !u!1001 &872659997
@@ -2174,6 +2201,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
   m_GameObject: {fileID: 765251234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -16.9, y: -0.49790376, z: -2.4572973}
@@ -2182,6 +2211,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+>>>>>>> parent of fba99bf (Expanded Level 3)
+=======
 >>>>>>> parent of fba99bf (Expanded Level 3)
 --- !u!1001 &872659997
 =======
@@ -2379,6 +2411,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6076553517571110489, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
   m_PrefabInstance: {fileID: 789941444}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &556254203
 PrefabInstance:
@@ -2520,6 +2553,57 @@ AudioListener:
 --- !u!20 &1007318110
 Camera:
   m_ObjectHideFlags: 0
+=======
+  m_GameObject: {fileID: 894202825}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 446576618}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!4 &962813801 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6076553517571110489, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
+  m_PrefabInstance: {fileID: 534092234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1007318108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1007318111}
+  - component: {fileID: 1007318110}
+  - component: {fileID: 1007318109}
+  - component: {fileID: 1007318112}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1007318109
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007318108}
+  m_Enabled: 1
+--- !u!20 &1007318110
+Camera:
+  m_ObjectHideFlags: 0
+>>>>>>> parent of fba99bf (Expanded Level 3)
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10163,6 +10247,7 @@ Transform:
   m_PrefabInstance: {fileID: 1664256763}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1192818040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -10248,6 +10333,8 @@ Transform:
 --- !u!1 &1488763404
 >>>>>>> 534823100d279144da6823df1a2ed653bd4da472
 =======
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
 --- !u!1 &1091245267
 >>>>>>> parent of fba99bf (Expanded Level 3)
 GameObject:
@@ -10398,6 +10485,7 @@ Transform:
   - {fileID: 1394468344}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1568815394
@@ -10509,6 +10597,10 @@ Transform:
 =======
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of fba99bf (Expanded Level 3)
 --- !u!1001 &1098943443
 >>>>>>> parent of fba99bf (Expanded Level 3)
 PrefabInstance:
@@ -10566,9 +10658,12 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 --- !u!1001 &1633196082
 =======
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
 >>>>>>> parent of fba99bf (Expanded Level 3)
 --- !u!4 &1112903050 stripped
@@ -10583,7 +10678,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1175990832
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
 >>>>>>> parent of fba99bf (Expanded Level 3)
 PrefabInstance:
@@ -10601,6 +10699,10 @@ PrefabInstance:
       propertyPath: goalColor.a
       value: 1
 >>>>>>> Stashed changes
+      objectReference: {fileID: 0}
+    - target: {fileID: -4841701173748522670, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
+      propertyPath: goalColor.b
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4841701173748522670, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
       propertyPath: goalColor.b
@@ -10630,8 +10732,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       value: 1
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
 >>>>>>> parent of fba99bf (Expanded Level 3)
       objectReference: {fileID: 0}
@@ -10642,6 +10747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2888448698585700969, guid: 05c7bfaccb8c84848873f98adf461d63, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
       value: -18.39
@@ -10655,9 +10761,13 @@ PrefabInstance:
 =======
       value: -19.45641
 >>>>>>> parent of fba99bf (Expanded Level 3)
+=======
+      value: -19.45641
+>>>>>>> parent of fba99bf (Expanded Level 3)
       objectReference: {fileID: 0}
     - target: {fileID: 2888448698585700969, guid: 05c7bfaccb8c84848873f98adf461d63, type: 3}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 1.73
@@ -10757,6 +10867,8 @@ PrefabInstance:
     - target: {fileID: 6076553517571110489, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
       propertyPath: m_LocalPosition.y
 >>>>>>> 534823100d279144da6823df1a2ed653bd4da472
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
 >>>>>>> parent of fba99bf (Expanded Level 3)
       value: -8.24
@@ -11173,6 +11285,9 @@ GameObject:
   m_PrefabInstance: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
 >>>>>>> parent of fba99bf (Expanded Level 3)
   m_PrefabAsset: {fileID: 0}
@@ -11192,6 +11307,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -11351,6 +11467,8 @@ Transform:
 >>>>>>> Stashed changes
 =======
 >>>>>>> parent of fba99bf (Expanded Level 3)
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
   m_GameObject: {fileID: 1568685328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.6344001, y: -2.197445, z: -37.64741}
@@ -11359,6 +11477,7 @@ Transform:
   - {fileID: 1899606315}
   - {fileID: 140370508}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 6
@@ -11443,6 +11562,11 @@ PrefabInstance:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1568815394
 >>>>>>> parent of fba99bf (Expanded Level 3)
+=======
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1568815394
+>>>>>>> parent of fba99bf (Expanded Level 3)
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11461,6 +11585,7 @@ PrefabInstance:
       propertyPath: m_Name
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: Platform (7)
 =======
       value: Platform (16)
@@ -11474,6 +11599,9 @@ PrefabInstance:
 =======
       value: Platform (7)
 >>>>>>> parent of fba99bf (Expanded Level 3)
+=======
+      value: Platform (7)
+>>>>>>> parent of fba99bf (Expanded Level 3)
       objectReference: {fileID: 0}
     - target: {fileID: 6076553517571110489, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
       propertyPath: m_RootOrder
@@ -11481,6 +11609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6076553517571110489, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
@@ -11497,6 +11626,9 @@ PrefabInstance:
 =======
 >>>>>>> 534823100d279144da6823df1a2ed653bd4da472
 >>>>>>> Stashed changes
+=======
+      value: -11.7918625
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
       value: -11.7918625
 >>>>>>> parent of fba99bf (Expanded Level 3)
@@ -11540,6 +11672,7 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -11555,6 +11688,9 @@ PrefabInstance:
 =======
 >>>>>>> 534823100d279144da6823df1a2ed653bd4da472
 >>>>>>> Stashed changes
+=======
+--- !u!1001 &1577188921
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
 --- !u!1001 &1577188921
 >>>>>>> parent of fba99bf (Expanded Level 3)
@@ -11582,6 +11718,7 @@ PrefabInstance:
     - target: {fileID: 2330121800598102985, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
       propertyPath: m_Name
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -11594,6 +11731,9 @@ PrefabInstance:
 =======
       value: Platform (16)
 >>>>>>> parent of fba99bf (Expanded Level 3)
+=======
+      value: Platform (16)
+>>>>>>> parent of fba99bf (Expanded Level 3)
       objectReference: {fileID: 0}
     - target: {fileID: 6076553517571110489, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
       propertyPath: m_RootOrder
@@ -11601,6 +11741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6076553517571110489, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 10.826708
@@ -11621,6 +11762,9 @@ PrefabInstance:
 =======
 >>>>>>> 534823100d279144da6823df1a2ed653bd4da472
 >>>>>>> Stashed changes
+=======
+      value: 10.826708
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
       value: 10.826708
 >>>>>>> parent of fba99bf (Expanded Level 3)
@@ -11664,6 +11808,7 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -11676,6 +11821,8 @@ Transform:
   m_PrefabInstance: {fileID: 1581766050}
   m_PrefabAsset: {fileID: 0}
 >>>>>>> 534823100d279144da6823df1a2ed653bd4da472
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
 >>>>>>> parent of fba99bf (Expanded Level 3)
 --- !u!1001 &1595407154
@@ -12259,6 +12406,7 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b090aae823ffb4e9fc294d2abcbc2b, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -12414,6 +12562,8 @@ Transform:
   m_PrefabInstance: {fileID: 1839254889}
   m_PrefabAsset: {fileID: 0}
 >>>>>>> 534823100d279144da6823df1a2ed653bd4da472
+=======
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
 >>>>>>> parent of fba99bf (Expanded Level 3)
 --- !u!4 &1889698295 stripped
@@ -12906,6 +13056,7 @@ RectTransform:
   - {fileID: 11975949}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -12921,6 +13072,9 @@ RectTransform:
 =======
 >>>>>>> 534823100d279144da6823df1a2ed653bd4da472
 >>>>>>> Stashed changes
+=======
+  m_RootOrder: 14
+>>>>>>> parent of fba99bf (Expanded Level 3)
 =======
   m_RootOrder: 14
 >>>>>>> parent of fba99bf (Expanded Level 3)
