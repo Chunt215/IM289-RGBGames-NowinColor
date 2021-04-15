@@ -5,7 +5,7 @@ using UnityEngine;
 public class BossBehavior : MonoBehaviour
 {
     public float speed = 3f;
-    public Rigidbody2D rb2d;
+    private Rigidbody2D rb2d;
     public Sprite[] bossVariants;
 
     private bool faceLeft = true;
