@@ -2,6 +2,7 @@
 Enemy movement and death stuff 
 */
 using UnityEngine;
+using System.Collections.Generic;
 
 public class EnemyBehaviour : MonoBehaviour
 {
@@ -10,10 +11,25 @@ public class EnemyBehaviour : MonoBehaviour
 
     private bool isLeft = true;
     private bool isRight = false;
+    private Color purple;
+    private Color orange;
+    private List<Color> primaries = new List<Color>();
+    private List<Color> secondaries = new List<Color>();
+    private SpriteRenderer sr;
 
     void Start()
     {
         rb2d = this.gameObject.GetComponent<Rigidbody2D>();
+        sr = this.gameObject.GetComponent<SpriteRenderer>();
+
+        purple = new Color(0.5f, 0, 1);
+        orange = new Color(1, 0.5f, 0);
+        primaries.Add(Color.red);
+        primaries.Add(Color.blue);
+        primaries.Add(Color.yellow);
+        secondaries.Add(orange);
+        secondaries.Add(purple);
+        secondaries.Add(Color.green);
     }
 
     void FixedUpdate()
@@ -70,4 +86,75 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
+    private bool Mixable()
+    {
+        bool canMix = false;
+
+        for (int i = 0; i < primaries.Count; i++)
+        {
+            if (sr.color == primaries[i])
+            {
+                canMix = true;
+                return canMix;
+            }
+            else
+            {
+                canMix = false;
+            }
+        }
+
+        return canMix;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (sr.color == Color.white || !Mixable())
+        {
+            switch (collision.tag)
+            {
+                case "Blue":
+                    sr.color = Color.blue;
+                    break;
+                case "Red":
+                    sr.color = Color.red;
+                    break;
+                case "Yellow":
+                    sr.color = Color.yellow;
+                    break;
+            }
+        }
+        else if(Mixable())
+        {
+            if (collision.tag == "Blue" && sr.color == Color.red)
+            {
+                sr.color = purple;
+            }
+
+            if (collision.tag == "Red" && sr.color == Color.blue)
+            {
+                sr.color = purple;
+            }
+
+            if (collision.tag == "Yellow" && sr.color == Color.red)
+            {
+                sr.color = orange;
+            }
+
+            if (collision.tag == "Red" && sr.color == Color.yellow)
+            {
+                sr.color = orange;
+            }
+
+            if (collision.tag == "Yellow" && sr.color == Color.blue)
+            {
+                sr.color = Color.green;
+            }
+
+            if (collision.tag == "Blue" && sr.color == Color.yellow)
+            {
+                sr.color = Color.green;
+            }
+        }
+
+    }
 }
