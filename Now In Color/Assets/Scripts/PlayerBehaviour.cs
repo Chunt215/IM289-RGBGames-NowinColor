@@ -239,6 +239,14 @@ public class PlayerBehaviour : MonoBehaviour
             LifeLost();
         }
 
+        if(collision.gameObject.CompareTag("BossBarrier"))
+        {
+            if(collision.gameObject.GetComponent<SpriteRenderer>().color == sr.color)
+            {
+                collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+            }
+        }
+
 
     }
 

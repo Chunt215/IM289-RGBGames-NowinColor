@@ -30,6 +30,7 @@ TagManager:
   - BossWall
   - FellOff
   - BGM
+  - BossBarrier
   layers:
   - Default
   - TransparentFX
