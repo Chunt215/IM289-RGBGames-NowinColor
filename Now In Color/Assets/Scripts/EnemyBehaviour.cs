@@ -155,6 +155,5 @@ public class EnemyBehaviour : MonoBehaviour
                 sr.color = Color.green;
             }
         }
-
     }
 }
