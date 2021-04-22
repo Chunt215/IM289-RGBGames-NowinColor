@@ -4838,8 +4838,8 @@ MonoBehaviour:
   exitSound: {fileID: 0}
   platforms: []
   canExit: 0
-  player: {fileID: 0}
-  playerCanvas: {fileID: 0}
+  player: {fileID: 2836399601374428579, guid: 4d85fc206ab0f4b4d9d740c802acd594, type: 3}
+  playerCanvas: {fileID: 1512879994360055678, guid: ff8cf54f133b7a34ca3404e1f38d0f26, type: 3}
   playerPos: {x: -7.4, y: -2.4, z: -8.42}
   canvasPos: {x: 1280, y: 720, z: 0}
 --- !u!4 &805219499
@@ -9169,8 +9169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6777f3ee0d4305458cdb72ddc1dad7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerObj: {fileID: 0}
-  target: {fileID: 0}
+  playerObj: {fileID: 2836399601374428579, guid: 4d85fc206ab0f4b4d9d740c802acd594, type: 3}
+  target: {fileID: 2836399601374428585, guid: 4d85fc206ab0f4b4d9d740c802acd594, type: 3}
   cameraSpeed: 150
 --- !u!1001 &1451122341
 PrefabInstance:

@@ -30,7 +30,6 @@ public class GameController : MonoBehaviour
         }
         else if(sceneName == "Level 1")
         {
-            print(sceneName);
             Instantiate(player, new Vector3(-10.88f, -2.91f, -8.42f), Quaternion.identity);
             Instantiate(playerCanvas, canvasPos, Quaternion.identity);
         }
@@ -59,7 +58,7 @@ public class GameController : MonoBehaviour
             Instantiate(player, new Vector3(-23.21f, -7.29f, -8.42f), Quaternion.identity);
             Instantiate(playerCanvas, canvasPos, Quaternion.identity);
         }
-        else if (sceneName == "Boss Battles")
+        else if (sceneName == "Boss Battle")
         {
             Instantiate(player, new Vector3(-38.99f, -8.44f, -8.42f), Quaternion.identity);
             Instantiate(playerCanvas, canvasPos, Quaternion.identity);

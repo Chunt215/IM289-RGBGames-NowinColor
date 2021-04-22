@@ -6,25 +6,32 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Start Screen.unity
-    guid: dba44734fcf68dc4399db933f15bc1f9
-  - enabled: 1
     path: Assets/Scenes/Level 0.unity
     guid: f40f1211041224ac0824d47109ded227
+  - enabled: 1
+    path: Assets/Scenes/Boss Battle.unity
+    guid: 89a030e162ea21448a62e32371d0c80d
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: e59a6bc1ef15c134d9e309584b1bf46a
+  - enabled: 1
+    path: Assets/Scenes/End Game.unity
+    guid: e0f6e48cc45dc1b41bc5aad125979494
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: 281bc4a8c1255e04caeeb81a15cbe393
+  - enabled: 1
+    path: Assets/Scenes/Help.unity
+    guid: 5cb4ec9b96d0d7a428a13664c17fa626
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: ead91c85753cbd74fae914b5f12f9f74
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 08885be627b3baa4c81be4174ebdf621
-  - enabled: 0
-<<<<<<< Updated upstream
-    path: 
-    guid: 00000000000000000000000000000000
-=======
+  - enabled: 1
     path: Assets/Scenes/Level 3.unity
     guid: a3008aa0ede1a8f4083e0bc13a16f504
->>>>>>> Stashed changes
   - enabled: 1
     path: Assets/Scenes/Level 4.unity
     guid: 2cda990e2423bbf4892e6590ba056729
@@ -35,18 +42,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 6.unity
     guid: ab2e884a4af8e364385942b577016f2e
   - enabled: 1
-    path: Assets/Scenes/Boss Battle.unity
-    guid: 89a030e162ea21448a62e32371d0c80d
+    path: Assets/Scenes/Level Select.unity
+    guid: 985d6c1bb56244cf3bd85186ba45c4f8
   - enabled: 1
-    path: Assets/Scenes/Help.unity
-    guid: 5cb4ec9b96d0d7a428a13664c17fa626
-  - enabled: 1
-    path: Assets/Scenes/Credits.unity
-    guid: e59a6bc1ef15c134d9e309584b1bf46a
-  - enabled: 1
-    path: Assets/Scenes/End Game.unity
-    guid: e0f6e48cc45dc1b41bc5aad125979494
-  - enabled: 1
-    path: Assets/Scenes/Game Over.unity
-    guid: 281bc4a8c1255e04caeeb81a15cbe393
+    path: Assets/Scenes/Start Screen.unity
+    guid: dba44734fcf68dc4399db933f15bc1f9
   m_configObjects: {}
