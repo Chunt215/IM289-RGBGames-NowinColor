@@ -567,6 +567,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flashlight (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7431755839546989714, guid: b403352a1a9d58f44972b45a4ebbb9b1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b403352a1a9d58f44972b45a4ebbb9b1, type: 3}
 --- !u!1001 &64773749
@@ -3217,7 +3221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2888448698585700970, guid: 05c7bfaccb8c84848873f98adf461d63, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05c7bfaccb8c84848873f98adf461d63, type: 3}

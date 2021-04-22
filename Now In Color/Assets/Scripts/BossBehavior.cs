@@ -28,7 +28,7 @@ public class BossBehavior : MonoBehaviour
     {
         rb2d = this.gameObject.GetComponent<Rigidbody2D>();
         sr = this.gameObject.GetComponent<SpriteRenderer>();
-        //player = GameObject.Find("Player(Clone)");
+        player = GameObject.Find("Player(Clone)");
         orange = new Color(1f, 0.5f, 0, 1f);
         purple = new Color(0.5f, 0, 1f, 1f);
     }
