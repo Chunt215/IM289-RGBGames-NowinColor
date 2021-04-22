@@ -8,14 +8,15 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public AudioClip exitSound;
-
     public List<GameObject> platforms;
     public bool canExit = false;
     public GameObject player;
     public GameObject playerCanvas;
     public Vector3 playerPos = new Vector3(-7.4f, -2.4f, -8.42f);
     public Vector3 canvasPos = new Vector3(1280, 720, 0);
+
     private string sceneName;
+    private bool soundPlayed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -103,6 +104,15 @@ public class GameController : MonoBehaviour
                     else
                     {
                         colored = true;
+
+                        if(soundPlayed == false)
+                        {
+                            soundPlayed = true;
+
+                            Vector3 camPos = Camera.main.transform.position;
+
+                            AudioSource.PlayClipAtPoint(exitSound, camPos);
+                        }
                     }
                 }
                 break;
@@ -118,6 +128,15 @@ public class GameController : MonoBehaviour
                     else
                     {
                         colored = true;
+
+                        if (soundPlayed == false)
+                        {
+                            soundPlayed = true;
+
+                            Vector3 camPos = Camera.main.transform.position;
+
+                            AudioSource.PlayClipAtPoint(exitSound, camPos);
+                        }
                     }
                 }
                 break;
