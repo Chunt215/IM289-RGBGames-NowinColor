@@ -31,7 +31,7 @@ public class Buttons : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Level 0");
+        SceneManager.LoadScene("Level Select");
     }
 
     public void LoadHelp()
