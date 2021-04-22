@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour
         }
         else if (sceneName == "Level 3")
         {
-            Instantiate(player, new Vector3(-10.88f, -2.91f, -8.42f), Quaternion.identity);
+            Instantiate(player, new Vector3(-23.41f, -7.91f, -8.42f), Quaternion.identity);
             Instantiate(playerCanvas, canvasPos, Quaternion.identity);
         }
         else if (sceneName == "Level 4")

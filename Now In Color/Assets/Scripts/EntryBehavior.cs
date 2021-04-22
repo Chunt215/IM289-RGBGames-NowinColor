@@ -32,7 +32,7 @@ public class EntryBehavior : MonoBehaviour
                 break;
             case "Level 4":
                 SceneManager.LoadScene("Level 3");
-                playerObj.transform.position = new Vector3(-9.6f, -5.3f, -8.42f);
+                playerObj.transform.position = new Vector3(23.3f, 4.95f, -8.42f);
                 break;
             case "Level 5":
                 SceneManager.LoadScene("Level 4");
