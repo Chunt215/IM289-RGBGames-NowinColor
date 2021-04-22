@@ -3435,8 +3435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6777f3ee0d4305458cdb72ddc1dad7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerObj: {fileID: 2836399601374428579, guid: 4d85fc206ab0f4b4d9d740c802acd594, type: 3}
-  target: {fileID: 2836399601374428585, guid: 4d85fc206ab0f4b4d9d740c802acd594, type: 3}
+  playerObj: {fileID: 0}
+  target: {fileID: 0}
   cameraSpeed: 150
 --- !u!1001 &1079837309
 PrefabInstance:
