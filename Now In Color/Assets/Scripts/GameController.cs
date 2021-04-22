@@ -27,6 +27,42 @@ public class GameController : MonoBehaviour
             Instantiate(player, playerPos, Quaternion.identity);
             Instantiate(playerCanvas, canvasPos, Quaternion.identity);
         }
+        else if(sceneName == "Level 1")
+        {
+            print(sceneName);
+            Instantiate(player, new Vector3(-10.88f, -2.91f, -8.42f), Quaternion.identity);
+            Instantiate(playerCanvas, canvasPos, Quaternion.identity);
+        }
+        else if (sceneName == "Level 2")
+        {
+            Instantiate(player, new Vector3(-10.89f, -12.16f, -8.42f), Quaternion.identity);
+            Instantiate(playerCanvas, canvasPos, Quaternion.identity);
+        }
+        else if (sceneName == "Level 3")
+        {
+            Instantiate(player, new Vector3(-10.88f, -2.91f, -8.42f), Quaternion.identity);
+            Instantiate(playerCanvas, canvasPos, Quaternion.identity);
+        }
+        else if (sceneName == "Level 4")
+        {
+            Instantiate(player, new Vector3(-9.27f, 4.78f, -8.42f), Quaternion.identity);
+            Instantiate(playerCanvas, canvasPos, Quaternion.identity);
+        }
+        else if (sceneName == "Level 5")
+        {
+            Instantiate(player, new Vector3(-14.92f, -5.21f, -8.42f), Quaternion.identity);
+            Instantiate(playerCanvas, canvasPos, Quaternion.identity);
+        }
+        else if (sceneName == "Level 6")
+        {
+            Instantiate(player, new Vector3(-23.21f, -7.29f, -8.42f), Quaternion.identity);
+            Instantiate(playerCanvas, canvasPos, Quaternion.identity);
+        }
+        else if (sceneName == "Boss Battles")
+        {
+            Instantiate(player, new Vector3(-38.99f, -8.44f, -8.42f), Quaternion.identity);
+            Instantiate(playerCanvas, canvasPos, Quaternion.identity);
+        }
         else if(sceneName == "Start Screen" || sceneName == "End Game" || sceneName == "Game Over")
         {
             Destroy(GameObject.Find("Player(Clone)"));
