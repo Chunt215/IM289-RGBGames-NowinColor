@@ -827,7 +827,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &425302269
 RectTransform:
@@ -2868,6 +2868,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1034044138849970309, guid: b2e55ecd5541293458f5ff97d8ecac9f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3965261619400603790, guid: b2e55ecd5541293458f5ff97d8ecac9f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
