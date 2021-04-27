@@ -138,7 +138,7 @@ public class PlayerBehaviour : MonoBehaviour
 
             Vector3 camPos = Camera.main.transform.position;
 
-            AudioSource.PlayClipAtPoint(jumpSound, camPos);
+            AudioSource.PlayClipAtPoint(jumpSound, camPos, 0.25f);
         }
 
         // Check to see what layer has hit and collect that information
@@ -219,7 +219,7 @@ public class PlayerBehaviour : MonoBehaviour
 
             Vector3 camPos = Camera.main.transform.position;
 
-            AudioSource.PlayClipAtPoint(coinSound, camPos);
+            AudioSource.PlayClipAtPoint(coinSound, camPos, 0.25f);
         }
 
         if (collision.gameObject.CompareTag("Life"))
@@ -285,7 +285,7 @@ public class PlayerBehaviour : MonoBehaviour
 
                 Vector3 camPos = Camera.main.transform.position;
 
-                AudioSource.PlayClipAtPoint(checkpointSound, camPos);
+                AudioSource.PlayClipAtPoint(checkpointSound, camPos, 0.5f);
             }
         }
         else if (CheckMixable())
