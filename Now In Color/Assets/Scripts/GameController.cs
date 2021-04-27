@@ -83,6 +83,18 @@ public class GameController : MonoBehaviour
         }
 
         canExit = AllColored();
+
+        if (AllColored())
+        {
+            if (soundPlayed == false)
+            {
+                soundPlayed = true;
+
+                Vector3 camPos = Camera.main.transform.position;
+
+                AudioSource.PlayClipAtPoint(exitSound, camPos);
+            }
+        }
     }
 
     public bool AllColored()
@@ -103,15 +115,6 @@ public class GameController : MonoBehaviour
                     else
                     {
                         colored = true;
-
-                        if(soundPlayed == false)
-                        {
-                            soundPlayed = true;
-
-                            Vector3 camPos = Camera.main.transform.position;
-
-                            AudioSource.PlayClipAtPoint(exitSound, camPos);
-                        }
                     }
                 }
                 break;
@@ -127,15 +130,6 @@ public class GameController : MonoBehaviour
                     else
                     {
                         colored = true;
-
-                        if (soundPlayed == false)
-                        {
-                            soundPlayed = true;
-
-                            Vector3 camPos = Camera.main.transform.position;
-
-                            AudioSource.PlayClipAtPoint(exitSound, camPos);
-                        }
                     }
                 }
                 break;

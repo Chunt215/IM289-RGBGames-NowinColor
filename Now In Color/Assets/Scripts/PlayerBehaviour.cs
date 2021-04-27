@@ -415,7 +415,7 @@ public class PlayerBehaviour : MonoBehaviour
 
             Vector3 camPos = Camera.main.transform.position;
 
-            AudioSource.PlayClipAtPoint(shootSound, camPos);
+            AudioSource.PlayClipAtPoint(shootSound, camPos, 0.25f);
         }
     }
 }
