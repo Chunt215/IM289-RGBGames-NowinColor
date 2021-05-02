@@ -52,29 +52,29 @@ public class BossBehavior : MonoBehaviour
             SlideRight();
         }
 
-        barrierPos = transform.position;
+        //barrierPos = transform.position;
 
-        if (faceRight)
-        {
-            barrierPos.x += 9;
-        }
-        else
-        {
-            barrierPos.x -= 9;
-        }
+        //if (faceRight)
+        //{
+        //    barrierPos.x += 9;
+        //}
+        //else
+        //{
+        //    barrierPos.x -= 9;
+        //}
 
-        if (health == 6 && GameObject.Find("OrangeBarrier(Clone)") == null)
-        {
-            player.GetComponent<Rigidbody2D>().AddForce(Vector2.right * -awayForce);
-            Invoke("SpawnBarrier", 0.5f);
-        }
+        //if (health == 6 && GameObject.Find("OrangeBarrier(Clone)") == null)
+        //{
+        //    player.GetComponent<Rigidbody2D>().AddForce(Vector2.right * -awayForce);
+        //    Invoke("SpawnBarrier", 0.5f);
+        //}
 
-        if (health == 3 && GameObject.Find("BlackBarrier(Clone)") == null)
-        {
-            player.GetComponent<Rigidbody2D>().AddForce(Vector2.right * -awayForce);
-            Destroy(GameObject.Find("OrangeBarrier(Clone)"));
-            Invoke("SpawnBarrier", 0.5f);
-        }
+        //if (health == 3 && GameObject.Find("BlackBarrier(Clone)") == null)
+        //{
+        //    player.GetComponent<Rigidbody2D>().AddForce(Vector2.right * -awayForce);
+        //    Destroy(GameObject.Find("OrangeBarrier(Clone)"));
+        //    Invoke("SpawnBarrier", 0.5f);
+        //}
     }
 
     void SlideLeft()
@@ -112,46 +112,46 @@ public class BossBehavior : MonoBehaviour
             Switch();
         }
 
-        if(collision.gameObject.CompareTag("Player"))
-        {
-            if(collision.gameObject.GetComponent<SpriteRenderer>().color == orange && health > 3)
-            {
-                health--;
-                switch(health)
-                {
-                    case 6:
-                        sr.sprite = bossVariants[3];
-                        break;
-                    case 5:
-                        sr.sprite = bossVariants[4];
-                        break;
-                    case 4:
-                        sr.sprite = bossVariants[5];
-                        break;
-                }
-            }
+        //if(collision.gameObject.CompareTag("Player"))
+        //{
+        //    if(collision.gameObject.GetComponent<SpriteRenderer>().color == orange && health > 3)
+        //    {
+        //        health--;
+        //        switch(health)
+        //        {
+        //            case 6:
+        //                sr.sprite = bossVariants[3];
+        //                break;
+        //            case 5:
+        //                sr.sprite = bossVariants[4];
+        //                break;
+        //            case 4:
+        //                sr.sprite = bossVariants[5];
+        //                break;
+        //        }
+        //    }
 
-            if (collision.gameObject.GetComponent<SpriteRenderer>().color == purple)
-            {
-                health--;
-                switch(health)
-                {
-                    case 3:
-                        sr.sprite = bossVariants[6];
-                        break;
-                    case 2:
-                        sr.sprite = bossVariants[7];
-                        break;
-                    case 1:
-                        sr.sprite = bossVariants[8];
-                        break;
-                    case 0:
-                        Destroy(this.gameObject);
-                        Destroy(GameObject.Find("BlackBarrier(Clone)"));
-                        break;
-                }
-            }
-        }
+        //    if (collision.gameObject.GetComponent<SpriteRenderer>().color == purple)
+        //    {
+        //        health--;
+        //        switch(health)
+        //        {
+        //            case 3:
+        //                sr.sprite = bossVariants[6];
+        //                break;
+        //            case 2:
+        //                sr.sprite = bossVariants[7];
+        //                break;
+        //            case 1:
+        //                sr.sprite = bossVariants[8];
+        //                break;
+        //            case 0:
+        //                Destroy(this.gameObject);
+        //                Destroy(GameObject.Find("BlackBarrier(Clone)"));
+        //                break;
+        //        }
+        //    }
+        //}
 
         if (collision.gameObject.CompareTag("Bullet"))
         {
@@ -163,6 +163,27 @@ public class BossBehavior : MonoBehaviour
                     break;
                 case 7:
                     sr.sprite = bossVariants[2];
+                    break;
+                case 6:
+                    sr.sprite = bossVariants[3];
+                    break;
+                case 5:
+                    sr.sprite = bossVariants[4];
+                    break;
+                case 4:
+                    sr.sprite = bossVariants[5];
+                    break;
+                case 3:
+                    sr.sprite = bossVariants[6];
+                    break;
+                case 2:
+                    sr.sprite = bossVariants[7];
+                    break;
+                case 1:
+                    sr.sprite = bossVariants[8];
+                    break;
+                case 0:
+                    Destroy(this.gameObject);
                     break;
             }
             Destroy(collision.gameObject);
