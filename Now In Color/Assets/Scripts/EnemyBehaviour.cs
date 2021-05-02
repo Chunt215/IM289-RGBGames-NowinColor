@@ -1,6 +1,8 @@
-/*
-Enemy movement and death stuff 
-*/
+/*****************************************************************************
+// File Name:                  
+// Primary Author :            Adam Jensen
+*****************************************************************************/
+
 using UnityEngine;
 using System.Collections.Generic;
 

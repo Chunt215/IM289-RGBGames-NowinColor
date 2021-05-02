@@ -1,3 +1,8 @@
+/*****************************************************************************
+// File Name:                  
+// Primary Author :            Adam Jensen
+*****************************************************************************/
+
 using UnityEngine;
 
 public class CheckpointChange : MonoBehaviour

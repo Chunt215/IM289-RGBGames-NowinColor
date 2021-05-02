@@ -1,5 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
+/*****************************************************************************
+// File Name:                  
+// Primary Author :            
+// Additional Authors:      Adam Jensen
+//
+// Who Completed What 
+//(if more than one author): Adam wrote the code for enemy movement and
+//                           for enemy changing sprites when hit. 
+*****************************************************************************/
+
 using UnityEngine;
 
 public class BossBehavior : MonoBehaviour

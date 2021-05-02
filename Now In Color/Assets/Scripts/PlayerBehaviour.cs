@@ -1,6 +1,16 @@
-/*
-Player movement and stuff 
-*/
+/*****************************************************************************
+// File Name:                  
+// Primary Author :            
+// Additional Authors:         Adam Jensen
+//
+// Who Completed What 
+//(if more than one author): Adam created the lives mechanic, all sounds, 
+//                           all collisions expect for platform, wall, and
+//                           boss barrier, all parts of the lives, and 
+//                           some of the shooting, moving, jumping, and 
+//                           crouching (mainly animation).
+*****************************************************************************/
+
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;

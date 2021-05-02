@@ -1,3 +1,13 @@
+/*****************************************************************************
+// File Name:                  
+// Primary Author :          Adam Jensen  
+// Additional Authors:         
+//
+// Who Completed What 
+//(if more than one author): Adam wrote everything in the script expect for 
+//                           the playerObj lines. 
+*****************************************************************************/
+
 using UnityEngine;
 
 public class CameraBehavior : MonoBehaviour

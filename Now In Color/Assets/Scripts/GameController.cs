@@ -1,6 +1,12 @@
-/*
-spawning and platform behaviour stuff 
-*/
+/*****************************************************************************
+// File Name:                  
+// Primary Author :            
+// Additional Authors:        Adam Jensen 
+//
+// Who Completed What 
+//(if more than one author): Adam created everything in the Update function
+*****************************************************************************/
+
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -92,7 +98,7 @@ public class GameController : MonoBehaviour
 
                 Vector3 camPos = Camera.main.transform.position;
 
-                AudioSource.PlayClipAtPoint(exitSound, camPos);
+                AudioSource.PlayClipAtPoint(exitSound, camPos, 0.4f);
             }
         }
     }

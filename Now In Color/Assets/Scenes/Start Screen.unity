@@ -1454,6 +1454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03633fda6ac97f8488140a6c6ab5057d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  exitSound: {fileID: 0}
   platforms: []
   canExit: 0
   player: {fileID: 0}
@@ -1484,6 +1485,10 @@ PrefabInstance:
     - target: {fileID: 7336398834434813560, guid: 8d5849f4472aa24409a2c549fec704c5, type: 3}
       propertyPath: Loop
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7336398834434813560, guid: 8d5849f4472aa24409a2c549fec704c5, type: 3}
+      propertyPath: m_Volume
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 8189420453066909164, guid: 8d5849f4472aa24409a2c549fec704c5, type: 3}
       propertyPath: m_RootOrder

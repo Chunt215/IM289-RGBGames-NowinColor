@@ -1,5 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+/*****************************************************************************
+// File Name:                  
+// Primary Author :            
+// Additional Authors:         
+//
+// Who Completed What (if more than one author): 
+*****************************************************************************/
 using UnityEngine;
 
 public class PlatformBehaviour : MonoBehaviour

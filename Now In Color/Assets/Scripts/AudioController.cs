@@ -1,5 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+/*****************************************************************************
+// File Name:                  
+// Primary Author :            Adam Jensen
+*****************************************************************************/
 using UnityEngine;
 
 public class AudioController : MonoBehaviour

@@ -1,5 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
+/*****************************************************************************
+// File Name:                  
+// Primary Author :            
+// Additional Authors:         
+//
+// Who Completed What (if more than one author): 
+*****************************************************************************/
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +14,7 @@ public class ExitBehavior : MonoBehaviour
     public GameObject gcObject;
     private GameController gc;
     private GameObject playerObj;
+    private GameObject playerUI;
     private PlayerBehaviour player;
     private string sceneName;
 
@@ -18,6 +25,7 @@ public class ExitBehavior : MonoBehaviour
         gc = gcObject.GetComponent<GameController>();
         sceneName = SceneManager.GetActiveScene().name;
         playerObj = GameObject.Find("Player(Clone)");
+       /* playerUI = GameObject.Find("PlayerCanvas(Clone)");*/
         player = playerObj.GetComponent<PlayerBehaviour>();
 
         nextScene = SceneManager.GetActiveScene().buildIndex + 1;
@@ -66,6 +74,7 @@ public class ExitBehavior : MonoBehaviour
                     case "Boss Battle":
                         SceneManager.LoadScene("End Game");
                         Destroy(playerObj);
+                        /*Destroy(playerUI);*/
                         break;
                 }
             }

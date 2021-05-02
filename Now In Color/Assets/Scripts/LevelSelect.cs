@@ -1,7 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
+/*****************************************************************************
+// File Name:                  
+// Primary Author :            
+// Additional Authors:         n/a
+//
+// Who Completed What (if more than one author): 
+*****************************************************************************/
+
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LevelSelect : MonoBehaviour
